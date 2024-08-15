@@ -1,25 +1,49 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
+@import 'modern-normalize/modern-normalize.css';
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./about-me.css');
+@import url('./benefits.css');
+@import url('./projects.css');
+@import url('./faq.css');
+@import url('./covers.css');
+@import url('./reviews.css');
+@import url('./work-together.css');
+@import url('./modal-window.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+body {
+  font-family: 'Inter Tight', sans-serif;
+  color: #fafafa;
+  background-color: #1c1d20;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+ul {
+  list-style: none;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 375px;
 }
