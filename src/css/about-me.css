@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
   margin-bottom: 32px;
   gap: 16px;
 }
@@ -141,7 +140,7 @@
 }
 
 .skills {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -186,6 +185,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about-me-main {
+    margin-bottom: 64px;
+  }
+
   .about-me-description {
     font-size: 38px;
     line-height: 1.05;
@@ -225,7 +228,7 @@
   }
 
   .skills {
-    margin-bottom: 48px;
+    margin-bottom: 96px;
   }
 
   .skills-container.swiper {
@@ -248,7 +251,7 @@
   .about-me-main {
     flex-direction: row;
     margin-top: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 96px;
   }
 
   .details-list {
@@ -277,6 +280,6 @@
   }
 
   .skills {
-    margin: 0 32px 82px 32px;
+    margin: 0 32px 164px 32px;
   }
 }
