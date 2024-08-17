@@ -16,10 +16,12 @@
   "author": "test<test@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
     "axios": "^1.7.3",
     "izitoast": "^1.4.0",
     "modern-normalize": "^3.0.0",
     "simplelightbox": "^2.14.3",
+    "swiper": "^11.1.9",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
