@@ -16,6 +16,7 @@
   "author": "test<test@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
     "axios": "^1.7.3",
     "izitoast": "^1.4.0",
     "modern-normalize": "^3.0.0",
