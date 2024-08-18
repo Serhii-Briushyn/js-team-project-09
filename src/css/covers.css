@@ -66,11 +66,7 @@ img {
     background-image: url('../img/covers/el_vectors-2x.png');
   }
 }
-.container {
-  max-width: 375px;
-  padding: 0;
-  margin: 0 auto;
-}
+
 .cover-container {
   width: 100%;
   height: auto;
@@ -132,7 +128,7 @@ img {
 /* Tablet  */
 
 @media screen and (min-width: 768px) {
-  .container {
+  .cover-container {
     max-width: 768px;
     height: 960px;
   }
@@ -151,7 +147,7 @@ img {
   }
 }
 @media screen and (min-width: 1158px) {
-  .container {
+  .cover-container {
     max-width: 1429px;
   }
   .cover-section {
