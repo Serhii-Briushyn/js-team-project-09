@@ -156,4 +156,11 @@ img {
     height: 960px;
     background-size: cover;
   }
+  .cover-list li {
+    max-height: 314px;
+  }
+  .cover-img {
+    max-width: 544px;
+    height: auto;
+  }
 }
