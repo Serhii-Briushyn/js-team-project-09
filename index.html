@@ -2,84 +2,515 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/js-team-project-09/assets/Favicon-BFNYAc0D.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/js-team-project-09/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js-team-project-09/assets/vendor-DwJT8CDE.js">
+    <link rel="stylesheet" crossorigin href="/js-team-project-09/assets/vendor-Be9b3THL.css">
+    <link rel="stylesheet" crossorigin href="/js-team-project-09/assets/index-BO3rPMUt.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <header>
+      
+    </header>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+    <main>
+       <section class="hero">
+        <div class="container-hero container">
+            <div class="box-for-title">
+                <h1 class="hero-main-title">Hello.
+                    I'm Fullstack developer
+                    Lloyd Jefferson.</h1>
+            </div>
 
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
+            <ul class="hero-social-list">
+                <li><a class="item-social-list" href="https://www.instagram.com/goitclub/" target="_blank">
+                        IG
+                    </a></li>
+                <li><a class="item-social-list" href="https://www.facebook.com/goITclub/" target="_blank">
+                        FB
+                    </a></li>
+                <li><a class="item-social-list" href="https://www.youtube.com/c/GoIT" target="_blank">
+                        YT
+                    </a></li>
+                <li><a class="item-social-list" href="https://serhii-briushyn.github.io/js-team-project-09/" target="_blank">
+                        GH
+                    </a></li>
+                <li><a class="item-social-list address-link"
+                        href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+      <section class="about-me">
+  <div class="container">
+    <div class="about-me-main">
+      <h2 class="about-me-title">My profile</h2>
+
+      <p class="about-me-description">
+        I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE IMPRESSIVE AND
+        <span class="about-me-span-red">FUNCTIONAL</span>
+        <span class="about-me-span-grey">WEBSITES</span> THAT REFLECT EACH
+        CLIENT'S UNIQUE PERSONALITY.
+      </p>
+      <picture>
+        <source
+          srcset="/js-team-project-09/assets/about-me-desktop-DfD8UHqg.jpg 1x, /js-team-project-09/assets/about-me-desktop@2x-KPPpj7Ry.jpg 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/js-team-project-09/assets/about-me-tablet-CerHnnVK.jpg 1x, /js-team-project-09/assets/about-me-tablet@2x-BwlKYwNQ.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/js-team-project-09/assets/about-me-mobile-CVtsttga.jpg 1x, /js-team-project-09/assets/about-me-mobile@2x-CbSDj727.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          src="/js-team-project-09/assets/about-me-desktop-DfD8UHqg.jpg"
+          alt="My photo"
+          class="about-me-photo"
+          loading="lazy"
+        />
+      </picture>
     </div>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <ul class="details-list">
+      <li class="details-item active">
+        <div class="details-container">
+          <h3 class="details-subtitle">ABOUT ME</h3>
+          <button class="details-btn" type="button">
+            <svg class="icon-arrow">
+              <use xlink:href="/js-team-project-09/assets/sprite-BT0Q7UCY.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="details-content">
+          <p class="details-description">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+
+          <p class="details-description">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. <br />I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+        </div>
+      </li>
+
+      <li class="details-item">
+        <div class="details-container">
+          <h3 class="details-subtitle">ROLE</h3>
+          <button class="details-btn" type="button">
+            <svg class="icon-arrow">
+              <use xlink:href="/js-team-project-09/assets/sprite-BT0Q7UCY.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="details-content">
+          <ul class="details-role-list">
+            <li class="details-description">Frontend development</li>
+            <li class="details-description">HeadlessCMS,Wordpress</li>
+            <li class="details-description">Blender(enjoy)</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="details-item">
+        <div class="details-container">
+          <h3 class="details-subtitle">EDUCATION</h3>
+          <button class="details-btn" type="button">
+            <svg class="icon-arrow">
+              <use xlink:href="/js-team-project-09/assets/sprite-BT0Q7UCY.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="details-content">
+          <ul class="details-education-list">
+            <li class="details-description">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </li>
+            <li class="details-description">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </li>
+            <li class="details-description">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <div class="skills">
+      <div class="skills-container swiper">
+        <ul class="skills-list swiper-wrapper">
+          <li class="swiper-slide skills-item">HTML/CSS</li>
+          <li class="swiper-slide skills-item">JavaScript</li>
+          <li class="swiper-slide skills-item">React</li>
+          <li class="swiper-slide skills-item">Node.js</li>
+          <li class="swiper-slide skills-item">React Native</li>
+          <li class="swiper-slide skills-item">Soft skills</li>
+          <li class="swiper-slide skills-item">Figma</li>
+        </ul>
+      </div>
+      <svg class="swiper-button-next">
+        <use xlink:href="/js-team-project-09/assets/sprite-BT0Q7UCY.svg#icon-arrow-right"></use>
+      </svg>
     </div>
   </div>
 </section>
 
+      
+      <!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Example page title</h1>
+      <img src="./img/javascript.svg" alt="" />
+    </section> -->
+
+<section class="projects-section">
+  <h2 class="projects-name">PROJECTS</h2>
+  <div class="projects-parts">
+    <ul class="projects-swiper-wrapper">
+      <li class="projects-swiper-slide">
+        <div class="projects-swiper-container">
+          <ul class="projects-content">
+            <li class="projects-content-react">
+              <a
+                class="proj-content-text"
+                href="https://github.com/react"
+                target="_blank"
+                >#react</a
+              >
+            </li>
+            <li class="projects-content-js">
+              <a
+                class="proj-content-text"
+                href="https://github.com/js"
+                target="_blank"
+                >#js</a
+              >
+            </li>
+            <li class="projects-content-node">
+              <a
+                class="proj-content-text"
+                href="https://github.com/node.js"
+                target="_blank"
+                >#node.js</a
+              >
+            </li>
+            <li class="projects-content-git">
+              <a
+                class="proj-content-text"
+                href="https://github.com/git"
+                target="_blank"
+                >#git</a
+              >
+            </li>
+          </ul>
+          <p class="projects-text">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+          <button class="projects-swiper-button" type="button">
+            See project
+          </button>
+        </div>
+        <div class="projects-picture-space">
+          <picture>
+            <source
+              srcset="/js-team-project-09/assets/project@1.1x--kIxrC0Y.jpg 1x, /js-team-project-09/assets/project@1.2x-D_63PazX.jpg 2x"
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="/js-team-project-09/assets/project@2.1x.mob-D2NFAIqA.jpg 1x, /js-team-project-09/assets/project@2.2x.mob-CYT5af35.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="projects-imag"
+              src="/js-team-project-09/assets/project@1.1x--kIxrC0Y.jpg"
+              alt="1 slide"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </li>
+    </ul>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!-- </body>
+</html> -->
+
+      
+       <section class="cover-section">
+  <div class="cover-container container">
+          <h2 aria-hidden="true" class="cover-hidden">Covers</h2>
+        <div class="covers-wrapp"></div>  
+           <ul class="cover-list">
+            
+            <li>
+              <picture class="cover-picture">
+                <source
+                  srcset="/img/Rectangle-4-1x.jpg 1x, /img/Rectangle-4-2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="/img/Rectangle-4-1x.jpg 1x, /img/Rectangle-4-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/img/Rectangle-4-1x.jpg 1x, /img/Rectangle-4-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/img/Rectangle-4-1x.jpg"
+                  alt="Banking"
+                  width="282"
+                 
+                  class="cover-img"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture class="cover-picture">
+                <source
+                  srcset="/img/Rectangle-5-1x.jpg 1x, /img/Rectangle-5-2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="/img/Rectangle-5-1x.jpg 1x, /img/Rectangle-5-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/img/Rectangle-5-1x.jpg 1x, /img/Rectangle-5-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/img/Rectangle-5-1x.jpg"
+                  alt="Banking"
+                  width="282"
+                  
+                  class="cover-img"
+                />
+              </picture>
+            </li>
+            
+          </ul>
+           <ul class="cover-list">
+            <li>
+              <picture class="cover-picture">
+                <source
+                  srcset="/img/Rectangle-6-1x.jpg 1x, /img/Rectangle-6-2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="/img/Rectangle-6-1x.jpg 1x, /img/Rectangle-6-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/img/Rectangle-6-1x.jpg 1x, /img/Rectangle-6-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/img/Rectangle-6-1x.jpg"
+                  alt="Banking"
+                  width="282"
+                 
+                  class="cover-img"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture class="cover-picture">
+                <source
+                  srcset="/img/Rectangle-7-1x.jpg 1x, /img/Rectangle-7-2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="/img/Rectangle-7-1x.jpg 1x, /img/Rectangle-7-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/img/Rectangle-7-1x.jpg 1x, /img/Rectangle-7-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/img/Rectangle-7-1x.jpg"
+                  alt="Banking"
+                  width="282"
+                 
+                  class="cover-img"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture class="cover-picture">
+                <source
+                  srcset="/img/Rectangle-8-1x.jpg 1x, /img/Rectangle-8-2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="/img/Rectangle-8-1x.jpg 1x, /img/Rectangle-8-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/img/Rectangle-8-1x.jpg 1x, /img/Rectangle-8-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/img/Rectangle-8-1x.jpg"
+                  alt="Banking"
+                  width="282"
+                  
+                  class="cover-img"
+                />
+              </picture>
+          </ul>
+           <ul class="cover-list">
+            <li>
+              <picture class="cover-picture">
+                <source
+                  srcset="/img/Rectangle-9-1x.jpg 1x, /img/Rectangle-9-2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="/img/Rectangle-9-1x.jpg 1x, /img/Rectangle-9-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/img/Rectangle-9-1x.jpg 1x, /img/Rectangle-9-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/img/Rectangle-9-1x.jpg"
+                  alt="Banking"
+                  width="282"
+                  
+                  class="cover-img"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture class="cover-picture">
+                <source
+                  srcset="/img/Rectangle-10-1x.jpg 1x, /img/Rectangle-10-2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="/img/Rectangle-10-1x.jpg 1x, /img/Rectangle-10-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/img/Rectangle-10-1x.jpg 1x, /img/Rectangle-10-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/img/Rectangle-10-2x.jpg"
+                  alt="Banking"
+                  width="282"
+                 
+                  class="cover-img"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture class="cover-picture">
+                <source
+                  srcset="/img/Rectangle-11-1x.jpg 1x, /img/Rectangle-11-2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="/img/Rectangle-11-1x.jpg 1x, /img/Rectangle-11-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/img/Rectangle-11-1x.jpg 1x, ./img/Rectangle-11-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/img/Rectangle-11-1x.jpg"
+                  alt="Banking"
+                  width="282"
+                  class="cover-img"
+                />
+              </picture>
+            </li>
+          </ul>
+           <ul class="cover-list">
+            <li>
+              <picture class="cover-picture">
+                <source
+                  srcset="/img/Rectangle-12-1x.jpg 1x, /img/Rectangle-12-2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="/img/Rectangle-12-1x.jpg 1x, /img/Rectangle-12-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/img/Rectangle-12-1x.jpg 1x, /img/Rectangle-12-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/img/Rectangle-12-1x.jpg"
+                  alt="Banking"
+                  width="282"
+                  
+                  class="cover-img"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+    </div>
+    </section>
+      
+    </main>
+
+    <footer>
+      
+    </footer>
 
     
+
   </body>
 </html>
