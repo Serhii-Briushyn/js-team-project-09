@@ -57,14 +57,14 @@ img {
   background-size: cover;
   margin: 0 auto;
   cursor: pointer;
-  background-image: url(../img/el_vectors-1x.png);
+  background-image: url('../img/covers/el_vectors-1x.png');
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 @media screen and (min-resolution: 2dppx),
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2) {
   .cover-section {
-    background-image: url(../img/el_vectors-2x.png;);
+    background-image: url('../img/covers/el_vectors-2x.png');
   }
 }
 .container {
@@ -146,6 +146,10 @@ img {
     height: 314px;
     padding: 0;
   }
+  .cover-img {
+    max-width: 544px;
+    height: auto;
+  }
 }
 @media screen and (min-width: 1158px) {
   .container {
@@ -158,9 +162,5 @@ img {
   }
   .cover-list li {
     max-height: 314px;
-  }
-  .cover-img {
-    max-width: 544px;
-    height: auto;
   }
 }
