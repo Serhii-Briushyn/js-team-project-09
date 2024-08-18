@@ -2,7 +2,6 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Обработчик для секции "About Me"
   document.querySelectorAll('.details-item .details-btn').forEach(button => {
     button.addEventListener('click', function () {
       const item = this.closest('.details-item');
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     firstItem.style.maxHeight = firstItem.scrollHeight + 'px';
   }
 
-  // Инициализация Swiper
   let swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 2,
