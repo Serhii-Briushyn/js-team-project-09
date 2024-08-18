@@ -27,7 +27,7 @@
 }
 
 /* Button Styles */
-.my-button {
+.my-button-benefits {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -131,7 +131,7 @@
     height: 675px;
   }
 
-  .my-button-p-benefits {
+  .my-button-benefits {
     width: auto; /* Відновлено авто для кнопки */
   }
 
