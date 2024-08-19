@@ -106,6 +106,7 @@
 	width: 68px;
 	height: 68px;
 	fill: none;
+	color: #00000000;
 }
 
 @media screen and (min-width: 768px) {
