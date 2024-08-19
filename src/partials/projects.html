@@ -1,98 +1,251 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <section>
-      <h1>Example page title</h1>
-      <img src="./img/javascript.svg" alt="" />
-    </section> -->
+<section class="projects">
+  <div class="container">
+    <h2 class="projects-title">Projects</h2>
+    <div class="projects-parts swiper-container" tabindex="0">
+      <ul class="projects-slide swiper-wrapper">
+        <li class="projects-content-react swiper-slide">
+          <div class="projects-content-react-wrap">
+            <ul class="projects-content-react-list">
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/react"
+                  target="_blank"
+                  >#react</a
+                >
+              </li>
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/js"
+                  target="_blank"
+                  >#js</a
+                >
+              </li>
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/node.js"
+                  target="_blank"
+                  >#node js</a
+                >
+              </li>
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/git"
+                  target="_blank"
+                  >#git</a
+                >
+              </li>
+            </ul>
 
-<section class="projects-section">
-  <h2 class="projects-name">PROJECTS</h2>
-  <div class="projects-parts">
-    <ul class="projects-swiper-wrapper">
-      <li class="projects-swiper-slide">
-        <div class="projects-swiper-container">
-          <ul class="projects-content">
-            <li class="projects-content-react">
-              <a
-                class="proj-content-text"
-                href="https://github.com/react"
-                target="_blank"
-                >#react</a
+            <div>
+              <p class="projects-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+              <button
+                class="projects-button"
+                type="button"
+                onclick="window.open('https:/github.com/Serhii-Briushyn/js-team-project-09', '_blank')"
               >
-            </li>
-            <li class="projects-content-js">
-              <a
-                class="proj-content-text"
-                href="https://github.com/js"
-                target="_blank"
-                >#js</a
-              >
-            </li>
-            <li class="projects-content-node">
-              <a
-                class="proj-content-text"
-                href="https://github.com/node.js"
-                target="_blank"
-                >#node.js</a
-              >
-            </li>
-            <li class="projects-content-git">
-              <a
-                class="proj-content-text"
-                href="https://github.com/git"
-                target="_blank"
-                >#git</a
-              >
-            </li>
-          </ul>
-          <p class="projects-text">
-            Programming Across Borders: Ideas, Technologies, Innovations
-          </p>
-          <button class="projects-swiper-button" type="button">
-            See project
-          </button>
-        </div>
-        <div class="projects-picture-space">
-          <picture>
-            <source
-              srcset="
-                /img/projects/project@1.1x.jpg 1x,
-                /img/projects/project@1.2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
+                See project
+              </button>
+            </div>
+          </div>
+          <div class="projects-picture-space">
+            <picture>
+              <source
+                srcset="
+                  /img/projects/project@1.1x.jpg 1x,
+                  /img/projects/project@1.2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /img/projects/project@2.1x.mob.jpg 1x,
+                  /img/projects/project@2.2x.mob.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/img/projects/project@2.1x.mob.jpg"
+                alt="1 slide"
+                class="project-photo"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
 
-            <source
-              srcset="
-                /img/projects/project@2.1x.mob.jpg 1x,
-                /img/projects/project@2.2x.mob.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              class="projects-imag"
-              src="/img/projects/project@1.1x.jpg"
-              alt="1 slide"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-      </li>
-    </ul>
+        <li class="projects-content-react swiper-slide">
+          <div class="projects-content-react-wrap">
+            <ul class="projects-content-react-list">
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/react"
+                  target="_blank"
+                  >#react</a
+                >
+              </li>
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/js"
+                  target="_blank"
+                  >#js</a
+                >
+              </li>
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/node.js"
+                  target="_blank"
+                  >#node js</a
+                >
+              </li>
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/git"
+                  target="_blank"
+                  >#git</a
+                >
+              </li>
+            </ul>
 
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+            <div>
+              <p class="projects-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+              <button
+                class="projects-button"
+                type="button"
+                onclick="window.open('https:/github.com/Serhii-Briushyn/js-team-project-09', '_blank')"
+              >
+                See project
+              </button>
+            </div>
+          </div>
+          <div class="projects-picture-space">
+            <picture>
+              <source
+                srcset="
+                  /img/projects/project@21.1x.jpg 1x,
+                  /img/projects/project@21.2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /img/projects/project@22.1x.mob.jpg 1x,
+                  /img/projects/project@22.2x.mob.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="../img/projects/project@22.1x.mob.jpg"
+                alt="2 slide"
+                class="project-photo"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+
+        <li class="projects-content-react swiper-slide">
+          <div class="projects-content-react-wrap">
+            <ul class="projects-content-react-list">
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/react"
+                  target="_blank"
+                  >#react</a
+                >
+              </li>
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/js"
+                  target="_blank"
+                  >#js</a
+                >
+              </li>
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/node.js"
+                  target="_blank"
+                  >#node js</a
+                >
+              </li>
+              <li class="projects-content-react-item">
+                <a
+                  class="proj-content-text"
+                  href="https://github.com/git"
+                  target="_blank"
+                  >#git</a
+                >
+              </li>
+            </ul>
+
+            <div>
+              <p class="projects-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+              <button
+                class="projects-button"
+                type="button"
+                onclick="window.open('https:/github.com/Serhii-Briushyn/js-team-project-09', '_blank')"
+              >
+                See project
+              </button>
+            </div>
+          </div>
+          <div class="projects-picture-space">
+            <picture>
+              <source
+                srcset="
+                  /img/projects/project@31.1x.jpg 1x,
+                  /img/projects/project@31.2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /img/projects/project@32.1x.mob.jpg 1x,
+                  /img/projects/project@32.2x.mob.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/img/projects/project@32.1x.mob.jpg"
+                alt="3 slide"
+                class="project-photo"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <div class="projects-button-arrow">
+        <svg class="projects-arrow projects-arrow-prev">
+          <use
+            class="projects-arrow-svg"
+            xlink:href="/img/sprite.svg#icon-arrow-left"
+          ></use>
+        </svg>
+
+        <svg class="projects-arrow projects-arrow-next">
+          <use
+            class="projects-arrow-svg"
+            xlink:href="/img/sprite.svg#icon-arrow-right"
+          ></use>
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
-
-<script type="module" src="./main.js"></script>
-<!-- </body>
-</html> -->
