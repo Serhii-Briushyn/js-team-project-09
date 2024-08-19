@@ -1,0 +1,159 @@
+
+.container{
+	max-width: 375px;
+	padding: 0 16px;
+	margin:  auto;
+}
+.reviews-container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 64px;
+}
+
+.reviews-title {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: -0.02em;
+	color: rgba(250, 250, 250, 0.4);
+	margin-bottom: 32px;
+	margin-top: 8px;
+}
+
+.review-swiper-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 344px;
+	height: 386px;
+
+}
+
+.review-swiper {
+	position: relative;
+		width: 100%;
+		overflow: hidden;
+}
+
+.review-card {
+	border: 1px solid rgba(250, 250, 250, 0.2);
+	border-radius: 20px;
+	padding: 32px 24px;
+	max-width: 344px;
+	height: 302px;
+
+}
+
+.review-img {
+	border-radius: 10px;
+	max-width: 48px;
+	height: 48px;
+
+}
+
+.review-name {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.5;
+	letter-spacing: -0.02em;
+	color: #fafafa;
+	margin-top: 32px;
+	margin-bottom: 8px;
+}
+
+.review-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: -0.02em;
+	color: rgba(250, 250, 250, 0.6);
+}
+
+
+.review-buttons {
+	width: 156px;
+	height: 68px;
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 20px ;
+}
+
+
+.custom-prev,
+.custom-next {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.custom-prev.disabled,
+.custom-next.disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+
+.reviews-icon {
+	border: 1px solid rgba(250, 250, 250, 0.5);
+	border-radius: 60px;
+	padding: 18px;
+	width: 68px;
+	height: 68px;
+	fill: none;
+	color: #00000000;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.reviews-container {
+		margin-bottom: 96px;
+	}
+
+		.review-swiper-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			/* width: 100%; */ 
+			 width: 704px;
+			height: 402px;
+		}
+}
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+	.container {
+		width: 1440px;
+	}
+	.reviews-container {
+		width: 1376px;
+		height: 458px;
+		margin-bottom: 164px;
+	}
+		.review-swiper-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			/* width: 100%; */
+
+			width: 1376px;
+				height: 458px;
+		}
+
+}
