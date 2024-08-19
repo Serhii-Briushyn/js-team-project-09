@@ -1,0 +1,149 @@
+.my-button-benefits {
+  display: flex;
+  margin-top: auto;
+}
+
+.benefits {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  position: absolute;
+  top: 0;
+  left: 32px;
+}
+
+.my-button-benefits {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  background: #1c1d20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  width: 187px;
+  height: 55px;
+  margin-top: 64px;
+}
+
+.benefits-li {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 24px;
+  background: #242527;
+  width: 332px;
+  height: 314px;
+}
+
+.icon-container-benefits {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+.benefits-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 680px;
+  /* height: 644px; */
+}
+
+.h3-benefits {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  padding: 64px 0 8px;
+}
+
+.p-benefits {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.p-benefits.h3-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 284px;
+  height: 110px;
+}
+
+/* Media 1222*/
+@media (max-width: 375px) {
+  .container-benefits {
+    /* flex-direction: column; */
+    padding: 15px;
+    width: auto;
+    /* height: 1271px; */
+  }
+
+  .section-benefits {
+    width: 100%;
+    height: auto;
+  }
+
+  .benefits-ul {
+    width: 100%;
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+  .container-benefits {
+    flex-direction: column;
+    /* flex-direction: row; */
+    padding: 32px;
+    gap: 24px;
+  }
+
+  .section-benefits {
+    width: 100%;
+    height: auto;
+    /* width: 704px;
+    height: 675px; */
+  }
+
+  .benefits-ul {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Tablet Styles */
+  .container-benefits {
+    padding: 32px;
+  }
+
+  .section-benefits {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+}
+
+/* АНІМАЦІЯ */
+.icon-benefits {
+  transition: transform 0.3s ease, fill 0.3s ease;
+  transform-origin: center;
+}
+
+.icon-benefits:hover {
+  transform: scale(1.2);
+  fill: #e74c3c;
+}
