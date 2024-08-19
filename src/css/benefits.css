@@ -1,20 +1,8 @@
-/* Container Styles */
-.container-benefits {
+.my-button-benefits {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0 32px;
-  gap: 16px;
+  margin-top: auto;
 }
 
-/* Section benefits Styles */
-.section-benefits {
-  width: 1376px;
-  height: 763px;
-}
-
-/* Benefits Styles */
 .benefits {
   font-weight: 600;
   font-size: 16px;
@@ -27,8 +15,7 @@
   left: 32px;
 }
 
-/* Button Styles */
-.my-button {
+.my-button-benefits {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -45,7 +32,6 @@
   margin-top: 64px;
 }
 
-/* SPDT Card Styles */
 .benefits-li {
   display: flex;
   flex-direction: column;
@@ -62,16 +48,14 @@
   height: 48px;
 }
 
-/* SPDT UL Styles */
 .benefits-ul {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   width: 680px;
-  height: 644px;
+  /* height: 644px; */
 }
 
-/* SPDT Text Styles */
 .h3-benefits {
   font-weight: 600;
   font-size: 20px;
@@ -97,13 +81,13 @@
   height: 110px;
 }
 
-/* Media Queries */
+/* Media 1222*/
 @media (max-width: 375px) {
   .container-benefits {
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 15px;
-    width: 344px;
-    height: 1271px;
+    width: auto;
+    /* height: 1271px; */
   }
 
   .section-benefits {
@@ -126,18 +110,14 @@
   }
 
   .section-benefits {
-    /* width: 100%;
-    height: auto; */
-    width: 704px;
-    height: 675px;
-  }
-
-  .my-button-p-benefits {
-    width: auto; /* Відновлено авто для кнопки */
+    width: 100%;
+    height: auto;
+    /* width: 704px;
+    height: 675px; */
   }
 
   .benefits-ul {
-    flex-direction: column; /* Список вертикальний */
+    flex-direction: column;
     width: 100%;
   }
 }
@@ -145,23 +125,25 @@
 @media (min-width: 768px) {
   /* Tablet Styles */
   .container-benefits {
-    /* flex-direction: row; В горизонтальній ориентації */
-    padding: 32px; /* Відступи для планшетів */
+    padding: 32px;
   }
 
   .section-benefits {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
   }
 }
 
 /* АНІМАЦІЯ */
 .icon-benefits {
-  transition: transform 0.3s ease, fill 0.3s ease; /* Додаємо анімацію */
+  transition: transform 0.3s ease, fill 0.3s ease;
   transform-origin: center;
 }
 
 .icon-benefits:hover {
-  transform: scale(1.2); /* Збільшення розміру */
-  fill: #e74c3c; /* Зміна кольору */
+  transform: scale(1.2);
+  fill: #e74c3c;
 }
