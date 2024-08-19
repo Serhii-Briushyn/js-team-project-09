@@ -37,7 +37,6 @@ function addDesktopItems() {
   if (!document.querySelector('.cover-list.desktop')) {
     const newUl = document.createElement('ul');
     newUl.classList.add('cover-list', 'desktop');
-
     const newLi = document.createElement('li');
     newLi.innerHTML = `
         <picture class="cover-picture">
