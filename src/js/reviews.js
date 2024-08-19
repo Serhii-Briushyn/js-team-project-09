@@ -1,14 +1,16 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-// шлях на сервер
 const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 
-//  Swiper
 const swiper = new Swiper('.review-swiper', {
   direction: 'horizontal',
   loop: false,
   grabCursor: true,
+  //   effect: 'fade',
+  //   fadeEffect: {
+  //     crossFade: true,
+  //   },
   navigation: {
     nextEl: '.custom-next',
     prevEl: '.custom-prev',
@@ -18,7 +20,7 @@ const swiper = new Swiper('.review-swiper', {
     onlyInViewport: false,
   },
   breakpoints: {
-    320: {
+    100: {
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 16,
@@ -26,6 +28,11 @@ const swiper = new Swiper('.review-swiper', {
     768: {
       slidesPerView: 2,
       slidesPerGroup: 1,
+      spaceBetween: 16,
+    },
+    1024: {
+      slidesPerView: 3, // 3 відгуки для середніх екранів
+      slidesPerGroup: 3,
       spaceBetween: 16,
     },
     1440: {
@@ -48,7 +55,6 @@ const swiper = new Swiper('.review-swiper', {
   },
 });
 
-// запит
 async function fetchReviews() {
   try {
     const response = await fetch(URL);
@@ -62,16 +68,16 @@ async function fetchReviews() {
     showError('Not found');
   }
 }
-// розмітка
+
 function renderReviews(reviews) {
   const swiperWrapper = document.querySelector('.swiper-wrapper');
   const maxLength = 150;
 
   const markup = reviews
-    .map(review => {
-      return `
+    .map(
+      review => `
       <li class="swiper-slide review-card">
-        <img src="${review.avatar_url}" class="review-img"  alt="${
+        <img src="${review.avatar_url}" class="review-img" alt="${
         review.author
       }" />
         <p class="review-name">${review.author}</p>
@@ -81,15 +87,14 @@ function renderReviews(reviews) {
             : review.review
         }</p>
       </li>
-    `;
-    })
+    `
+    )
     .join('');
 
   swiperWrapper.innerHTML = markup;
   swiper.update();
 }
 
-// помилки
 function showError(message) {
   const swiperWrapper = document.querySelector('.swiper-wrapper');
   swiperWrapper.innerHTML = `<li class="swiper-slide"><p>${message}</p></li>`;
