@@ -28,7 +28,7 @@ body {
   background-size: cover;
   margin: 0 auto;
   cursor: pointer;
-  overflow: hidden;
+
   background-image: url('../img/el_vectors-1x.png');
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
