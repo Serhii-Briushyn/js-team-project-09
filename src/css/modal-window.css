@@ -6,9 +6,9 @@
     height: 100%;
     z-index: 9999999;
     backdrop-filter: blur(100px);
-    background-color: var(--background);
+    background-color: var(#1c1d20);
     background-image:
-        url(../img/mobile/phone-hero.png);
+        url(../img/modal-window/Glass\ effect\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     transform: translateX(100%);
@@ -19,7 +19,7 @@
 screen and (min-resolution: 2dppx),
 screen and (min-device-pixel-ratio: 2) {
     .mobile-menu {
-        background-image: url(../img/mobile/phone-hero@2x.png);
+        background-image: url(../img/modal-window/Glass\ effect\ 1@2x.png);
     }
 }
 
@@ -40,11 +40,11 @@ screen and (min-device-pixel-ratio: 2) {
     background-color: transparent;
     padding: 0;
     line-height: 0;
-    stroke: var(--main-text);
+    stroke: var(#fafafa);
 }
 
 .mobile-menu-close-btn-icon {
-    fill: var(--main-text);
+    fill: var(#fafafa);
 }
 
 .closed {
@@ -83,7 +83,7 @@ screen and (min-device-pixel-ratio: 2) {
     text-underline-offset: 3px;
     text-decoration-skip-ink: none;
 
-    color: var(--main-text);
+    color: var(#fafafa);
 }
 
 .mob-btn-wrapper {
@@ -97,7 +97,7 @@ screen and (min-device-pixel-ratio: 2) {
     padding: 14px 31px;
     width: 164px;
     height: 45px;
-    background-color: var(--accent-color);
+    background-color: var(#ed3b44);
 
 
 }
@@ -107,7 +107,7 @@ screen and (min-device-pixel-ratio: 2) {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
-    color: var(--main-text);
+    color: var(#fafafa);
 }
 
 
