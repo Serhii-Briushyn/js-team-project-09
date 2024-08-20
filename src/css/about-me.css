@@ -172,7 +172,7 @@
   align-items: center;
   width: 130px;
   height: 130px;
-  cursor: pointer;
+  cursor: grab;
   border-radius: 100%;
   border: 1px solid rgba(250, 250, 250, 0.2);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
