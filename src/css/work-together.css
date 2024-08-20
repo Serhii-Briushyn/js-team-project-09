@@ -1,0 +1,344 @@
+/* Отключаем фон для автозаполненных полей */
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+textarea:-webkit-autofill, 
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    box-shadow: 0 0 0px 1000px transparent inset;
+    -webkit-text-fill-color: #FAFAFA;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.current {
+    color: #ED3B44;
+}
+
+.footer {
+    min-width: 320px;
+    max-width: 375px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+    background-color: #1C1D20;
+    background-image: image-set(
+        url(/img/work-together/glass-effect-mob@2x-png.png) 2x,
+        url(/img/work-together/glass-effect-mob@1x-png.png) 1x
+    );
+    background-position: left 290px top 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        max-width: 768px;
+        display: flex;
+        justify-content: center;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 80px;
+        padding-bottom: 168px;
+        background-image: image-set(
+            url(/img/work-together/glass-effect-tab@2x-png.png) 2x,
+            url(/img/work-together/glass-effect-tab@1x-png.png) 1x
+        );
+        background-position: left 570px top 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        max-width: 1440px;
+        padding-left: 32px;
+        padding-right: 32px;
+        background-position: left 1040px top 0;
+    }
+}
+
+.footer-head {
+    display: flex;
+    
+}
+
+.footer-head-img {
+    width: 44px;
+    height: 44px;
+    margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-head-img {
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.footer-head-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #FAFAFA;
+    margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-head-title {
+        font-size: 64px;
+        line-height: 64px;
+        max-width: 542px;
+        margin-bottom: 0;
+    }
+}
+
+.footer-form {
+    display: block;
+    gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-form {
+        display: flex;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+}
+
+.footer-input-wrapper,
+.footer-comment-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 343px;
+    margin-bottom: 16px;
+    min-height: 60px; /* Установи высоту, достаточную для поля и сообщения */
+}
+
+@media screen and (min-width: 768px) {
+    .footer-input-wrapper, .footer-comment-wrapper {
+        width: 245px;
+        margin-top: auto;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer-input-wrapper, .footer-comment-wrapper {
+        width: 390px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-input-wrapper {
+        margin-bottom: 16px;
+    }
+    .footer-comment-wrapper {
+        margin-bottom: 32px;
+    }
+}
+
+.footer-input, .footer-comment {
+    color: #FAFAFA;
+    border: none;
+    border-bottom: 1px solid #FAFAFA99;
+    background-color: transparent;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer-input::placeholder,
+.footer-comment::placeholder {
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer-input:focus,
+.footer-comment:focus,
+.footer-input:hover,
+.footer-comment:hover {
+    border-bottom: 1px solid #FAFAFA;
+    background-color: transparent;
+    outline: none;
+}
+
+.validation-message {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+    display: block;
+}
+
+.footer-input.error {
+    border-bottom-color: #E74A3B;
+}
+
+.validation-message.error {
+    color: #E74A3B;
+}
+
+.footer-input.success {
+    border-bottom-color: #3CBC81;
+}
+
+.validation-message.success {
+    color: #3CBC81;
+}
+
+.footer-comment {
+    overflow: hidden;
+    resize: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ED3B44;
+    border-color: transparent;
+    color: #FAFAFA;
+    margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-btn {
+        min-width: 150px;
+        height: 150px;
+        margin-bottom: 0;
+    }
+}
+
+.form-btn:focus,
+.form-btn:hover {
+    background-color: #E0373F;
+}
+
+.adress-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+}
+
+.adress-list-item {
+    padding: 10px 12px 10px 12px;
+    border-radius: 60px;
+    border: 1px solid #FAFAFA33;
+}
+
+@media screen and (min-width: 768px) {
+    .adress-list-item {
+        padding: 18px 24px 18px 24px;
+    }
+}
+
+.adress-list-item:focus,
+.adress-list-item:hover {
+    border-color: #FAFAFA;
+}
+
+.footer-adress-link {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    letter-spacing: -0.02em;
+    color: #FAFAFA;
+}
+
+
+/* Стили для модального окна */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    display: block;
+    background-color: #1C1D20;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 64px;
+    padding-left: 32px;
+    border-radius: 8px;
+    text-align: right;
+    width: 300px;
+    border: 1px solid #FAFAFA1A;
+}
+
+.modal-content button {
+    width: 22px;
+    height: 22px;
+    color: #FAFAFA;
+}
+
+.modal-content h3 {
+    margin-bottom: 16px;
+    color: #FAFAFA;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-right: 12px;
+}
+
+.modal-content p {
+    color: #FAFAFA99;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.modal-close {
+    margin-bottom: 22px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-close-svg {
+    stroke: #FAFAFA;
+    fill: #FAFAFA;
+}
+
+/* Стили для всплывающего сообщения (toast) */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #E74A3B;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toast strong {
+    display: block;
+    margin-bottom: 5px;
+}
