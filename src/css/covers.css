@@ -28,7 +28,7 @@ body {
   background-size: cover;
   margin: 0 auto;
   cursor: pointer;
-  background-image: url('/img/el_vectors-1x.png');
+  background-image: url('/img/covers/el_vectors-1x.png') 1x;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -36,7 +36,7 @@ body {
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2) {
   .cover-section {
-    background-image: url('/img/el_vectors-2x.png');
+    background-image: url('/img/covers/el_vectors-2x.png') 2x;
   }
 }
 
