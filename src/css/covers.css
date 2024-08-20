@@ -42,7 +42,7 @@ body {
 
 .cover-container {
   max-width: 375px;
-  min-height: 508px;
+  height: 508px;
   padding: 0;
   position: relative;
   margin: 0 auto;
@@ -75,7 +75,7 @@ body {
 
 img.cover-img {
   width: 282px;
-  min-height: 162px;
+  height: 162px;
   display: block;
   object-fit: cover;
 }
@@ -102,7 +102,7 @@ img.cover-img {
 @media screen and (min-width: 768px) {
   .cover-container {
     max-width: 768px;
-    min-height: 960px;
+    height: 960px;
     overflow: hidden;
   }
 
@@ -117,7 +117,7 @@ img.cover-img {
 
   img.cover-img {
     width: 544px;
-    min-height: 314px;
+    height: 314px;
     object-fit: cover;
     display: block;
   }
@@ -129,7 +129,7 @@ img.cover-img {
 @media screen and (min-width: 1440px) {
   .cover-container {
     max-width: 1440px;
-    min-height: 960px;
+    height: 960px;
     overflow: hidden;
   }
   .cover-list-none {
