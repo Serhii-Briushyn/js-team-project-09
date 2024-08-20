@@ -81,7 +81,7 @@ img.cover-img {
 }
 
 .cover-section.scrolling {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .cover-section.scrolling .cover-list li {
   animation: marqueeLine 10s linear infinite;
