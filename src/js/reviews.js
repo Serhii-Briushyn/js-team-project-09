@@ -4,74 +4,93 @@ import 'swiper/css/bundle';
 (function () {
   const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const reviewSwiper = new Swiper('.review-swiper', {
-      direction: 'horizontal',
-      loop: false,
-      grabCursor: true,
-      navigation: {
-        nextEl: '.custom-next',
-        prevEl: '.custom-prev',
-      },
-      keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-      },
-      breakpoints: {
-        100: {
-          slidesPerView: 1,
-          slidesPerGroup: 1,
-          spaceBetween: 16,
-        },
-        768: {
-          slidesPerView: 2,
-          slidesPerGroup: 1,
-          spaceBetween: 16,
-        },
-        1024: {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-          spaceBetween: 16,
-        },
-        1440: {
-          slidesPerView: 4,
-          slidesPerGroup: 1,
-          spaceBetween: 16,
-        },
-      },
-      on: {
-        reachEnd: function () {
-          document.querySelector('.custom-prev').classList.add('disabled');
-        },
-        reachBeginning: function () {
-          document.querySelector('.custom-next').classList.add('disabled');
-        },
-        fromEdge: function () {
-          document.querySelector('.custom-next').classList.remove('disabled');
-          document.querySelector('.custom-prev').classList.remove('disabled');
-        },
-      },
-    });
 
-    async function fetchReviews() {
-      try {
-        const response = await fetch(URL);
-        if (!response.ok) {
-          throw new Error('Failed to fetch reviews');
-        }
-        const reviews = await response.json();
-        renderReviews(reviews);
-      } catch (error) {
-        console.error('Error fetching reviews:', error);
-        showError('Not found');
-      }
+const reviewSwiper = new Swiper('.review-swiper', {
+  direction: 'horizontal',
+  loop: false,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.review-swiper-button-next',
+    prevEl: '.review-swiper-button-prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 16,
+    },
+    1440: {
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      spaceBetween: 16,
+    },
+  },
+  on: {
+    init: function () {
+      document
+        .querySelector('.review-swiper-button-prev')
+        .classList.add('disabled');
+      document
+        .querySelector('.review-swiper-button-next')
+        .classList.remove('disabled');
+    },
+    reachEnd: function () {
+      document
+        .querySelector('.review-swiper-button-next')
+        .classList.add('disabled');
+      document
+        .querySelector('.review-swiper-button-prev')
+        .classList.remove('disabled');
+    },
+    reachBeginning: function () {
+      document
+        .querySelector('.review-swiper-button-prev')
+        .classList.add('disabled');
+      document
+        .querySelector('.review-swiper-button-next')
+        .classList.remove('disabled');
+    },
+    fromEdge: function () {
+      document
+        .querySelector('.review-swiper-button-prev')
+        .classList.remove('disabled');
+      document
+        .querySelector('.review-swiper-button-next')
+        .classList.remove('disabled');
+    },
+  },
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  document
+    .querySelector('.review-swiper-button-prev')
+    .classList.add('disabled');
+  document
+    .querySelector('.review-swiper-button-next')
+    .classList.remove('disabled');
+});
+
+async function fetchReviews() {
+  try {
+    const response = await fetch(URL);
+    if (!response.ok) {
+      throw new Error('Failed to fetch reviews');
     }
 
-    function renderReviews(reviews) {
-      const swiperWrapper = document.querySelector(
-        '.review-swiper .swiper-wrapper'
-      );
-      const maxLength = 150;
+
+function renderReviews(reviews) {
+  const swiperWrapper = document.querySelector('.review-swiper-wrapper');
+  const maxLength = 150;
+
 
       const markup = reviews
         .map(
@@ -91,16 +110,16 @@ import 'swiper/css/bundle';
         )
         .join('');
 
-      swiperWrapper.innerHTML = markup;
-      reviewSwiper.update();
-    }
 
-    function showError(message) {
-      const swiperWrapper = document.querySelector(
-        '.review-swiper .swiper-wrapper'
-      );
-      swiperWrapper.innerHTML = `<li class="swiper-slide"><p>${message}</p></li>`;
-    }
+  swiperWrapper.innerHTML = markup;
+  reviewSwiper.update();
+}
+
+function showError(message) {
+  const swiperWrapper = document.querySelector('.review-swiper-wrapper');
+  swiperWrapper.innerHTML = `<li class="swiper-slide"><p>${message}</p></li>`;
+}
+
 
     fetchReviews();
   });
