@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 2,
     spaceBetween: 0,
     navigation: {
-      nextEl: '.swiper-button-next',
+      nextEl: '.skills-button-next',
     },
     keyboard: {
       enabled: true,
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   document
-    .querySelector('.swiper-button-next')
+    .querySelector('.skills-button-next')
     .addEventListener('click', () => {
       swiper.slideNext();
     });
