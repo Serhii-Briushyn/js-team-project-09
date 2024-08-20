@@ -7,7 +7,8 @@
 .reviews-container {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 64px;
+	margin-bottom: 32px;
+	margin-top: 32px;
 }
 
 .reviews-title {
@@ -28,6 +29,9 @@
 	height: 386px;
 
 }
+.review-swiper-wrapper{
+
+}
 
 .review-swiper {
 	position: relative;
@@ -41,7 +45,14 @@
 	padding: 32px 24px;
 	max-width: 344px;
 	height: 302px;
-
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.2s;
+	opacity: 0.8;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-card:hover,
+:focus, :active {
+	opacity: 1;
 }
 
 .review-img {
@@ -77,8 +88,13 @@
 	justify-content: center;
 	gap: 12px;
 	margin-top: 20px ;
+	opacity: 0.8;
+		transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.review-buttons:hover,
+:focus {
+	opacity: 1;
+}
 
 .custom-prev,
 .custom-next {
@@ -90,7 +106,6 @@
 	align-items: center;
 	justify-content: center;
 }
-
 
 .custom-prev.disabled,
 .custom-next.disabled {
@@ -106,7 +121,8 @@
 	width: 68px;
 	height: 68px;
 	fill: none;
-	color: #00000000;
+	stroke: #fafafa;
+	
 }
 
 @media screen and (min-width: 768px) {
@@ -117,7 +133,8 @@
 	}
 
 	.reviews-container {
-		margin-bottom: 96px;
+		margin-bottom: 48px;
+		margin-top: 48px;
 	}
 
 		.review-swiper-container {
@@ -133,9 +150,6 @@
 
 
 
-
-
-
 @media screen and (min-width: 1440px) {
 	.container {
 		width: 1440px;
@@ -143,7 +157,8 @@
 	.reviews-container {
 		width: 1376px;
 		height: 458px;
-		margin-bottom: 164px;
+		margin-bottom: 82px;
+		margin-top: 82px;
 	}
 		.review-swiper-container {
 			display: flex;

@@ -3,24 +3,20 @@ import 'swiper/css/bundle';
 
 const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 
-const swiper = new Swiper('.review-swiper', {
+const reviewSwiper = new Swiper('.review-swiper', {
   direction: 'horizontal',
   loop: false,
   grabCursor: true,
-  //   effect: 'fade',
-  //   fadeEffect: {
-  //     crossFade: true,
-  //   },
   navigation: {
-    nextEl: '.custom-next',
-    prevEl: '.custom-prev',
+    nextEl: '.review-swiper-button-next',
+    prevEl: '.review-swiper-button-prev',
   },
   keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
   breakpoints: {
-    100: {
+    375: {
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 16,
@@ -30,11 +26,6 @@ const swiper = new Swiper('.review-swiper', {
       slidesPerGroup: 1,
       spaceBetween: 16,
     },
-    1024: {
-      slidesPerView: 3, // 3 відгуки для середніх екранів
-      slidesPerGroup: 3,
-      spaceBetween: 16,
-    },
     1440: {
       slidesPerView: 4,
       slidesPerGroup: 1,
@@ -42,17 +33,48 @@ const swiper = new Swiper('.review-swiper', {
     },
   },
   on: {
+    init: function () {
+      document
+        .querySelector('.review-swiper-button-prev')
+        .classList.add('disabled');
+      document
+        .querySelector('.review-swiper-button-next')
+        .classList.remove('disabled');
+    },
     reachEnd: function () {
-      document.querySelector('.custom-prev').classList.add('disabled');
+      document
+        .querySelector('.review-swiper-button-next')
+        .classList.add('disabled');
+      document
+        .querySelector('.review-swiper-button-prev')
+        .classList.remove('disabled');
     },
     reachBeginning: function () {
-      document.querySelector('.custom-next').classList.add('disabled');
+      document
+        .querySelector('.review-swiper-button-prev')
+        .classList.add('disabled');
+      document
+        .querySelector('.review-swiper-button-next')
+        .classList.remove('disabled');
     },
     fromEdge: function () {
-      document.querySelector('.custom-next').classList.remove('disabled');
-      document.querySelector('.custom-prev').classList.remove('disabled');
+      document
+        .querySelector('.review-swiper-button-prev')
+        .classList.remove('disabled');
+      document
+        .querySelector('.review-swiper-button-next')
+        .classList.remove('disabled');
     },
   },
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  document
+    .querySelector('.review-swiper-button-prev')
+    .classList.add('disabled');
+  document
+    .querySelector('.review-swiper-button-next')
+    .classList.remove('disabled');
 });
 
 async function fetchReviews() {
@@ -70,7 +92,7 @@ async function fetchReviews() {
 }
 
 function renderReviews(reviews) {
-  const swiperWrapper = document.querySelector('.swiper-wrapper');
+  const swiperWrapper = document.querySelector('.review-swiper-wrapper');
   const maxLength = 150;
 
   const markup = reviews
@@ -92,11 +114,11 @@ function renderReviews(reviews) {
     .join('');
 
   swiperWrapper.innerHTML = markup;
-  swiper.update();
+  reviewSwiper.update();
 }
 
 function showError(message) {
-  const swiperWrapper = document.querySelector('.swiper-wrapper');
+  const swiperWrapper = document.querySelector('.review-swiper-wrapper');
   swiperWrapper.innerHTML = `<li class="swiper-slide"><p>${message}</p></li>`;
 }
 
