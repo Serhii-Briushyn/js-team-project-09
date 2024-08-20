@@ -1,7 +1,9 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const URL = 'https://portfolio-js.b.goit.study/api/reviews';
+(function () {
+  const URL = 'https://portfolio-js.b.goit.study/api/reviews';
+
 
 const reviewSwiper = new Swiper('.review-swiper', {
   direction: 'horizontal',
@@ -83,35 +85,31 @@ async function fetchReviews() {
     if (!response.ok) {
       throw new Error('Failed to fetch reviews');
     }
-    const reviews = await response.json();
-    renderReviews(reviews);
-  } catch (error) {
-    console.error('Error fetching reviews:', error);
-    showError('Not found');
-  }
-}
+
 
 function renderReviews(reviews) {
   const swiperWrapper = document.querySelector('.review-swiper-wrapper');
   const maxLength = 150;
 
-  const markup = reviews
-    .map(
-      review => `
-      <li class="swiper-slide review-card">
-        <img src="${review.avatar_url}" class="review-img" alt="${
-        review.author
-      }" />
-        <p class="review-name">${review.author}</p>
-        <p class="review-text">${
-          review.review.length > maxLength
-            ? review.review.substring(0, maxLength) + '...'
-            : review.review
-        }</p>
-      </li>
-    `
-    )
-    .join('');
+
+      const markup = reviews
+        .map(
+          review => `
+          <li class="swiper-slide review-card">
+            <img src="${review.avatar_url}" class="review-img" alt="${
+            review.author
+          }" />
+            <p class="review-name">${review.author}</p>
+            <p class="review-text">${
+              review.review.length > maxLength
+                ? review.review.substring(0, maxLength) + '...'
+                : review.review
+            }</p>
+          </li>
+        `
+        )
+        .join('');
+
 
   swiperWrapper.innerHTML = markup;
   reviewSwiper.update();
@@ -122,4 +120,7 @@ function showError(message) {
   swiperWrapper.innerHTML = `<li class="swiper-slide"><p>${message}</p></li>`;
 }
 
-fetchReviews();
+
+    fetchReviews();
+  });
+})();

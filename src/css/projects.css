@@ -184,7 +184,7 @@
 
   .projects-content-react-wrap {
     border-radius: 24px 0 0 24px;
-    padding: 64px;
+    padding: 64px 130px 64px 64px;
     gap: 0;
   }
 

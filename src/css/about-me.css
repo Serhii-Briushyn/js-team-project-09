@@ -179,7 +179,7 @@
   background-color: #ed3b44;
 }
 
-.swiper-button-next {
+.skills-button-next {
   fill: none;
   stroke: #3b3b3b;
   cursor: pointer;
@@ -188,7 +188,7 @@
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.swiper-button-next:hover {
+.skills-button-next:hover {
   stroke: #7d7c7c;
 }
 
@@ -249,7 +249,7 @@
     height: 200px;
   }
 
-  .swiper-button-next {
+  .skills-button-next {
     width: 40px;
     height: 40px;
   }

@@ -1,19 +1,29 @@
 const viewport = document.querySelector('.cover-section');
 
-function isInViewport(element) {
+function isFullyInViewport(element) {
+  if (!element) return false;
   const rect = element.getBoundingClientRect();
+  const viewportHeight = window.innerHeight;
+  const viewportWidth = window.innerWidth;
+
   return (
-    rect.top < window.innerHeight &&
-    rect.left < window.innerWidth &&
-    rect.bottom > 0 &&
-    rect.right > 0
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= viewportHeight &&
+    rect.right <= viewportWidth
   );
 }
 
 function checkScroll() {
-  if (isInViewport(viewport)) {
+  if (isFullyInViewport(viewport)) {
+    if (!viewport.classList.contains('scrolling')) {
+      console.log('Section is fully in viewport.');
+    }
     viewport.classList.add('scrolling');
   } else {
+    if (viewport.classList.contains('scrolling')) {
+      console.log('Section is out of viewport.');
+    }
     viewport.classList.remove('scrolling');
   }
 }
@@ -28,43 +38,4 @@ function debounce(func, wait) {
 
 const debouncedCheckScroll = debounce(checkScroll, 100);
 window.addEventListener('scroll', debouncedCheckScroll);
-
 checkScroll();
-
-function addDesktopItems() {
-  const container = document.querySelector('.cover-section .cover-container');
-
-  if (!document.querySelector('.cover-list.desktop')) {
-    const newUl = document.createElement('ul');
-    newUl.classList.add('cover-list', 'desktop');
-    const newLi = document.createElement('li');
-    newLi.innerHTML = `
-        <picture class="cover-picture">
-          <source srcset="/img/covers/Rectangle-1-1x.jpg 1x, /img/covers/Rectangle-1-2x.jpg 2x" media="(min-width: 1158px)" />
-          <source srcset="/img/covers/Rectangle-1-1x.jpg 1x, /img/covers/Rectangle-1-2x.jpg 2x" media="(min-width: 768px)" />
-          <source srcset="/img/covers/Rectangle-1-1x.jpg 1x, /img/covers/Rectangle-1-2x.jpg 2x" media="(max-width: 767px)" />
-          <img src="/img/covers/Rectangle-1-1x.jpg" alt="Cover 1" width="282" class="cover-img" />
-        </picture>
-      `;
-    newUl.appendChild(newLi);
-    const existingLists = container.querySelectorAll('.cover-list');
-    container.insertBefore(newUl, existingLists[0]);
-  }
-}
-
-function removeDesktopItems() {
-  const desktopList = document.querySelector('.cover-list.desktop');
-  if (desktopList) {
-    desktopList.remove();
-  }
-}
-
-function handleResize() {
-  if (window.innerWidth >= 1158) {
-    addDesktopItems();
-  } else {
-    removeDesktopItems();
-  }
-}
-window.addEventListener('load', handleResize);
-window.addEventListener('resize', handleResize);
