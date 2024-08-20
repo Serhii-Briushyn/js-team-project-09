@@ -158,6 +158,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .faq-container {
+    margin-bottom: 164px;
+  }
+
   .faq-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
