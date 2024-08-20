@@ -37,14 +37,13 @@ function addDesktopItems() {
   if (!document.querySelector('.cover-list.desktop')) {
     const newUl = document.createElement('ul');
     newUl.classList.add('cover-list', 'desktop');
-
     const newLi = document.createElement('li');
     newLi.innerHTML = `
         <picture class="cover-picture">
-          <source srcset="./img/Rectangle-1-1x.jpg, ./img/Rectangle-1-2x.jpg" media="(min-width: 1158px)" />
-          <source srcset="./img/Rectangle-1-1x.jpg, ./img/Rectangle-1-2x.jpg" media="(min-width: 768px)" />
-          <source srcset="./img/Rectangle-1-1x.jpg, ./img/Rectangle-1-2x.jpg" media="(max-width: 767px)" />
-          <img src="./img/Rectangle-1-1x.jpg" alt="Cover 1" width="282" class="cover-img" />
+          <source srcset="/img/covers/Rectangle-1-1x.jpg 1x, /img/covers/Rectangle-1-2x.jpg 2x" media="(min-width: 1158px)" />
+          <source srcset="/img/covers/Rectangle-1-1x.jpg 1x, /img/covers/Rectangle-1-2x.jpg 2x" media="(min-width: 768px)" />
+          <source srcset="/img/covers/Rectangle-1-1x.jpg 1x, /img/covers/Rectangle-1-2x.jpg 2x" media="(max-width: 767px)" />
+          <img src="/img/covers/Rectangle-1-1x.jpg" alt="Cover 1" width="282" class="cover-img" />
         </picture>
       `;
     newUl.appendChild(newLi);
