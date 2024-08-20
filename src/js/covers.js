@@ -1,24 +1,28 @@
 const viewport = document.querySelector('.cover-section');
 
-function isInViewport(element) {
+function isFullyInViewport(element) {
+  if (!element) return false;
   const rect = element.getBoundingClientRect();
+  const viewportHeight = window.innerHeight;
+  const viewportWidth = window.innerWidth;
+
   return (
-    rect.top < window.innerHeight &&
-    rect.left < window.innerWidth &&
-    rect.bottom > 0 &&
-    rect.right > 0
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= viewportHeight &&
+    rect.right <= viewportWidth
   );
 }
 
 function checkScroll() {
-  if (isInViewport(viewport)) {
+  if (isFullyInViewport(viewport)) {
     if (!viewport.classList.contains('scrolling')) {
-      console.log('Section is in viewport".');
+      console.log('Section is fully in viewport.');
     }
     viewport.classList.add('scrolling');
   } else {
     if (viewport.classList.contains('scrolling')) {
-      console.log('Section is out of viewport".');
+      console.log('Section is out of viewport.');
     }
     viewport.classList.remove('scrolling');
   }
@@ -34,5 +38,4 @@ function debounce(func, wait) {
 
 const debouncedCheckScroll = debounce(checkScroll, 100);
 window.addEventListener('scroll', debouncedCheckScroll);
-
 checkScroll();
