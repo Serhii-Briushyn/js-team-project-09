@@ -1,3 +1,7 @@
+.about-me-container {
+  margin-top: 64px;
+}
+
 .about-me-main {
   display: flex;
   flex-direction: column;
@@ -146,7 +150,6 @@
 }
 
 .skills {
-  margin-bottom: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -235,10 +238,6 @@
     border-radius: 100%;
   }
 
-  .skills {
-    margin-bottom: 96px;
-  }
-
   .skills-container.swiper {
     width: 600px;
   }
@@ -256,6 +255,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .about-me-container {
+    margin-top: 96px;
+  }
+
   .about-me-main {
     flex-direction: row;
     margin-top: 48px;
@@ -288,6 +291,6 @@
   }
 
   .skills {
-    margin: 0 32px 164px 32px;
+    margin: 0 32px;
   }
 }

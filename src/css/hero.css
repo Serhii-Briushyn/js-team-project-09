@@ -2,7 +2,6 @@
   padding-top: 282px;
   padding-bottom: 32px;
   max-width: 375px;
-  margin-bottom: 64px;
 }
 
 .hero {
@@ -105,7 +104,6 @@
     min-width: 1440px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 96px;
   }
 
   .box-for-title {

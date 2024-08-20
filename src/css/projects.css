@@ -1,3 +1,7 @@
+.projects-container {
+  margin-top: 64px;
+}
+
 .projects-title {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
@@ -140,6 +144,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .projects-container {
+    margin-top: 96px;
+  }
+
   .projects-content-react-wrap {
     padding: 64px;
     gap: 164px;
@@ -177,6 +185,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .projects-container {
+    margin-top: 164px;
+  }
+
   .projects-content-react.swiper-slide {
     display: flex;
     flex-direction: row;

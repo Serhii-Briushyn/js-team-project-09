@@ -1,13 +1,7 @@
-.container {
-  max-width: 375px;
-  padding: 0 16px;
-  margin: auto;
-}
 .reviews-container {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 32px;
-	margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
 }
 
 .reviews-title {
@@ -24,11 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 344px;
-  height: 386px;
-}
-.review-swiper-wrapper{
-
+  gap: 32px;
 }
 
 .review-swiper {
@@ -38,19 +28,20 @@
 }
 
 .review-card {
-	border: 1px solid rgba(250, 250, 250, 0.2);
-	border-radius: 20px;
-	padding: 32px 24px;
-	max-width: 344px;
-	height: 302px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	transition: transform 0.2s;
-	opacity: 0.8;
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+  max-width: 344px;
+  min-height: 302px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  opacity: 0.8;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .review-card:hover,
-:focus, :active {
-	opacity: 1;
+:focus,
+:active {
+  opacity: 1;
 }
 
 .review-img {
@@ -78,18 +69,17 @@
 }
 
 .review-buttons {
-	width: 156px;
-	height: 68px;
-	display: flex;
-	justify-content: center;
-	gap: 12px;
-	margin-top: 20px ;
-	opacity: 0.8;
-		transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 156px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0.8;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .review-buttons:hover,
 :focus {
-	opacity: 1;
+  opacity: 1;
 }
 
 .custom-prev,
@@ -110,59 +100,23 @@
 }
 
 .reviews-icon {
-	border: 1px solid rgba(250, 250, 250, 0.5);
-	border-radius: 60px;
-	padding: 18px;
-	width: 68px;
-	height: 68px;
-	fill: none;
-	stroke: #fafafa;
-	
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  padding: 18px;
+  width: 68px;
+  height: 68px;
+  fill: none;
+  stroke: #fafafa;
 }
 
 @media screen and (min-width: 768px) {
-	.container {
-		width: 768px;
-		padding-left: 32px;
-		padding-right: 32px;
-	}
-
-	.reviews-container {
-		margin-bottom: 48px;
-		margin-top: 48px;
-	}
-
-		.review-swiper-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-
-			/* width: 100%; */ 
-			 width: 704px;
-			height: 402px;
-		}
+  .reviews-container {
+    margin-top: 96px;
+  }
 }
 
-
-
 @media screen and (min-width: 1440px) {
-	.container {
-		width: 1440px;
-	}
-	.reviews-container {
-		width: 1376px;
-		height: 458px;
-		margin-bottom: 82px;
-		margin-top: 82px;
-	}
-		.review-swiper-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-
-			/* width: 100%; */
-
-			width: 1376px;
-				height: 458px;
-		}
+  .reviews-container {
+    margin-top: 164px;
+  }
 }

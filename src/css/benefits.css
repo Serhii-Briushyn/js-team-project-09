@@ -1,3 +1,7 @@
+.container-benefits {
+  margin-top: 64px;
+}
+
 .h2-benefits {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
@@ -103,6 +107,10 @@
 }
 
 @media (min-width: 768px) {
+  .container-benefits {
+    margin-top: 96px;
+  }
+
   .benefits-ul {
     flex-direction: row;
     flex-wrap: wrap;
@@ -124,7 +132,7 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 164px;
+    margin-top: 164px;
   }
 
   .benefits-content {

@@ -42,9 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
 
-    nextButton.addEventListener('click', () => swiper.slideNext());
-    prevButton.addEventListener('click', () => swiper.slidePrev());
-
     projectsContainer.addEventListener('keydown', event => {
       if (document.activeElement === projectsContainer) {
         switch (event.key) {

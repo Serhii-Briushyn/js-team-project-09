@@ -47,6 +47,7 @@ body {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+  margin-top: 64px;
 }
 .covers-wrapp {
   position: absolute;
@@ -101,6 +102,7 @@ img.cover-img {
 /* Tablet */
 @media screen and (min-width: 768px) {
   .cover-container {
+    margin-top: 96px;
     max-width: 768px;
     height: 960px;
     overflow: hidden;
@@ -128,6 +130,7 @@ img.cover-img {
 /* Desktop */
 @media screen and (min-width: 1440px) {
   .cover-container {
+    margin-top: 164px;
     max-width: 1440px;
     height: 960px;
     overflow: hidden;

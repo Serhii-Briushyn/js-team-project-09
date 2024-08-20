@@ -1,6 +1,8 @@
 const mobileMenuButton = document.querySelector('.mobile-menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
-const mobileMenuCloseButton = document.querySelector('.mobile-menu-close-button');
+const mobileMenuCloseButton = document.querySelector(
+  '.mobile-menu-close-button'
+);
 const dropdownNav = document.querySelector('.dropdown-nav');
 const menuButton = document.querySelector('.menu-button');
 const mobileNav = document.querySelector('.mobile-nav');
