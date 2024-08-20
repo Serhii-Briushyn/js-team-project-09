@@ -3,13 +3,17 @@ import 'swiper/css/bundle';
 
 const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 
-const swiper = new Swiper('.unique-review-swiper-container', {
+const swiper = new Swiper('.review-swiper', {
   direction: 'horizontal',
   loop: false,
   grabCursor: true,
+  //   effect: 'fade',
+  //   fadeEffect: {
+  //     crossFade: true,
+  //   },
   navigation: {
-    nextEl: '.unique-review-arrow-next',
-    prevEl: '.unique-review-arrow-prev',
+    nextEl: '.custom-next',
+    prevEl: '.custom-prev',
   },
   keyboard: {
     enabled: true,
@@ -27,7 +31,7 @@ const swiper = new Swiper('.unique-review-swiper-container', {
       spaceBetween: 16,
     },
     1024: {
-      slidesPerView: 3, // 3 слайда для средних экранов
+      slidesPerView: 3, // 3 відгуки для середніх екранів
       slidesPerGroup: 3,
       spaceBetween: 16,
     },
@@ -39,22 +43,14 @@ const swiper = new Swiper('.unique-review-swiper-container', {
   },
   on: {
     reachEnd: function () {
-      document
-        .querySelector('.unique-review-arrow-next')
-        .classList.add('disabled');
+      document.querySelector('.custom-prev').classList.add('disabled');
     },
     reachBeginning: function () {
-      document
-        .querySelector('.unique-review-arrow-prev')
-        .classList.add('disabled');
+      document.querySelector('.custom-next').classList.add('disabled');
     },
     fromEdge: function () {
-      document
-        .querySelector('.unique-review-arrow-next')
-        .classList.remove('disabled');
-      document
-        .querySelector('.unique-review-arrow-prev')
-        .classList.remove('disabled');
+      document.querySelector('.custom-next').classList.remove('disabled');
+      document.querySelector('.custom-prev').classList.remove('disabled');
     },
   },
 });
@@ -74,7 +70,7 @@ async function fetchReviews() {
 }
 
 function renderReviews(reviews) {
-  const swiperWrapper = document.querySelector('.unique-review-wrapper');
+  const swiperWrapper = document.querySelector('.swiper-wrapper');
   const maxLength = 150;
 
   const markup = reviews
@@ -100,7 +96,7 @@ function renderReviews(reviews) {
 }
 
 function showError(message) {
-  const swiperWrapper = document.querySelector('.unique-review-wrapper');
+  const swiperWrapper = document.querySelector('.swiper-wrapper');
   swiperWrapper.innerHTML = `<li class="swiper-slide"><p>${message}</p></li>`;
 }
 

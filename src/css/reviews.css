@@ -1,4 +1,8 @@
-/* Основные стили контейнера отзывов */
+.container {
+  max-width: 375px;
+  padding: 0 16px;
+  margin: auto;
+}
 .reviews-container {
   display: flex;
   flex-direction: column;
@@ -15,8 +19,7 @@
   margin-top: 8px;
 }
 
-/* Стили контейнера Swiper */
-.unique-review-swiper-container {
+.review-swiper-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,13 +27,12 @@
   height: 386px;
 }
 
-.unique-review-swiper {
+.review-swiper {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-/* Стили карточки отзыва */
 .review-card {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
@@ -63,49 +65,42 @@
   color: rgba(250, 250, 250, 0.6);
 }
 
-/* Стили кнопок навигации */
-.review-button-arrow {
+.review-buttons {
+  width: 156px;
+  height: 68px;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  flex-direction: row;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 20px;
 }
 
-.unique-review-arrow-prev,
-.unique-review-arrow-next {
+.custom-prev,
+.custom-next {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-prev.disabled,
+.custom-next.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.reviews-icon {
   border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 60px;
-  padding: 13px;
-  width: 52px;
-  height: 52px;
+  padding: 18px;
+  width: 68px;
+  height: 68px;
   fill: none;
-  cursor: pointer;
-  stroke: #fafafa;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #00000000;
 }
 
-.unique-review-arrow-prev:hover,
-.unique-review-arrow-next:hover {
-  stroke: #7d7c7c;
-  border-color: #7d7c7c;
-}
-
-.unique-review-arrow-prev.disabled,
-.unique-review-arrow-next.disabled {
-  opacity: 0.5;
-  cursor: no-drop;
-}
-
-.unique-review-arrow-prev.disabled:hover,
-.unique-review-arrow-next.disabled:hover {
-  border-color: rgba(250, 250, 250, 0.5);
-  stroke: #fafafa;
-}
-
-/* Адаптивные стили */
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -117,10 +112,12 @@
     margin-bottom: 96px;
   }
 
-  .unique-review-swiper-container {
+  .review-swiper-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /* width: 100%; */
     width: 704px;
     height: 402px;
   }
@@ -130,17 +127,18 @@
   .container {
     width: 1440px;
   }
-
   .reviews-container {
     width: 1376px;
     height: 458px;
     margin-bottom: 164px;
   }
-
-  .unique-review-swiper-container {
+  .review-swiper-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /* width: 100%; */
+
     width: 1376px;
     height: 458px;
   }
