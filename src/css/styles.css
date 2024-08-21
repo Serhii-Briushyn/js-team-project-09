@@ -10,6 +10,10 @@
 @import url('./work-together.css');
 @import url('./modal-window.css');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
   color: #fafafa;
