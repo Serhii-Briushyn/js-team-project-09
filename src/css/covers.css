@@ -28,8 +28,6 @@ body {
   background-size: cover;
   margin: 0 auto;
   cursor: pointer;
-  background-image: url('/img/covers/el_vectors-1x.png');
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 @media screen and (min-resolution: 2dppx),
@@ -41,6 +39,8 @@ body {
 }
 
 .cover-container {
+  background-image: url('/img/covers/el_vectors-1x.png');
+  transition: background-color 0.3s ease, transform 0.3s ease;
   max-width: 375px;
   height: 508px;
   padding: 0;

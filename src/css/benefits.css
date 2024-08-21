@@ -29,6 +29,13 @@
   border-radius: 20px;
   padding: 24px;
   background-color: #242527;
+  transition: transform 0.3s ease, box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefits-li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5),
+    inset 0 5px 10px rgba(255, 0, 0, 0.2), inset 0 3px 3px rgba(255, 0, 0, 0.2);
 }
 
 .benefits-li-description {
