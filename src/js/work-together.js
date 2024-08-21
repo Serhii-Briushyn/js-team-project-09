@@ -88,7 +88,7 @@ function showModal(title, message) {
   modal.querySelector('.modal-close').addEventListener('click', closeModal);
 
   modal.addEventListener('click', function (event) {
-    if (event.target === modal) {
+    if (event.currentTarget === modal) {
       closeModal();
     }
   });
