@@ -2,20 +2,15 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import pathToSprite from '/img/sprite.svg';
 
-document
-  .querySelector('.footer-comment')
-  .addEventListener('input', function () {
-    const maxLength = this.cols;
-    if (this.value.length > maxLength) {
-      this.value = this.value.substring(0, maxLength - 3) + '...';
-    }
-  });
-
 document.getElementById('email').addEventListener('input', function () {
   const emailInput = this;
   const validationMessage = document.getElementById('email-validation');
 
-  if (emailInput.checkValidity()) {
+  if (emailInput.value === '') {
+    // Если поле пустое, убираем все классы и очищаем сообщение валидации
+    emailInput.classList.remove('error', 'success');
+    validationMessage.textContent = '';
+  } else if (emailInput.checkValidity()) {
     emailInput.classList.remove('error');
     emailInput.classList.add('success');
     validationMessage.textContent = 'Success!';
