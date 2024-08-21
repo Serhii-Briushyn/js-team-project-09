@@ -276,6 +276,11 @@ textarea:-webkit-autofill:focus {
     padding: 64px;
     width: 492px;
   }
+
+  .modal-close-svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
