@@ -2,7 +2,7 @@ import{S as m,i as v}from"./assets/vendor-CAampjE4.js";(function(){const t=docum
         <div class="modal-content">
             <button class="modal-close">
                 <svg class="modal-close-svg">
-                    <use href="/img/sprite.svg#icon-closed-menu"></use>
+                    <use xlink:href="/img/sprite.svg#icon-closed-menu"></use>
                 </svg>
             </button>
             <h3 class="modal-footer-title">${e}</h3>
