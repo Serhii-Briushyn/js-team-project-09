@@ -209,11 +209,11 @@ textarea:-webkit-autofill:focus {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  fill: none;
+  stroke: #fafafa;
 }
 
 .modal-close-svg {
-  fill: none;
-  stroke: #fafafa;
   width: 22px;
   height: 22px;
 }

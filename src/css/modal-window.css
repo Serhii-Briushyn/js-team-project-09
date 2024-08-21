@@ -6,7 +6,7 @@
   z-index: 1000;
   backdrop-filter: blur(100px);
   background-color: var(#1c1d20);
-  background-image: url(/img/modal-window/Glass\ effect\ 1.png);
+  background-image: url(/img/modal-window/glass-effect-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   transform: translateX(100%);
@@ -17,7 +17,7 @@
   screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2) {
   .mobile-menu {
-    background-image: url(/img/modal-window/Glass\ effect\ 1@2x.png);
+    background-image: url(/img/modal-window/glass-effect-1@2x.png);
   }
 }
 
