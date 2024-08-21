@@ -1,5 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import pathToSprite from '/img/sprite.svg';
 
 document
   .querySelector('.footer-comment')
@@ -55,7 +56,6 @@ document.querySelector('.form-btn').addEventListener('click', function (event) {
     })
     .then(result => {
       document.querySelector('.footer-form').reset();
-
       showModal(result.title, result.message);
     })
     .catch(error => {
@@ -69,19 +69,20 @@ document.querySelector('.form-btn').addEventListener('click', function (event) {
 function showModal(title, message) {
   const modal = document.createElement('div');
   modal.classList.add('modal');
+
   modal.innerHTML = `
         <div class="modal-content">
             <button class="modal-close">
                 <svg class="modal-close-svg">
-                  <use xlink:href="/img/sprite.svg#icon-closed-menu"></use>
+                  <use href="${pathToSprite}#icon-closed-menu"></use>
                 </svg>
             </button>
             <h3 class="modal-footer-title">${title}</h3>
             <p class="modal-footer-text">${message}</p>
         </div>
     `;
-  document.body.appendChild(modal);
 
+  document.body.appendChild(modal);
   document.body.classList.add('modal-open');
 
   function closeModal() {
@@ -106,8 +107,8 @@ function showModal(title, message) {
 
 function showToast(title, message) {
   iziToast.error({
-    title: 'Error',
-    message: 'Incorrect data entered!',
+    title: title,
+    message: message,
     position: 'topRight',
     timeout: 3000,
     transitionIn: 'fadeIn',
