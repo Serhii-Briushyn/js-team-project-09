@@ -109,6 +109,7 @@ img {
 .mobile-menu-close-icon {
   fill: none;
   stroke: #fafafa;
+  cursor: pointer;
 }
 
 .mobile-menu-close-button {
