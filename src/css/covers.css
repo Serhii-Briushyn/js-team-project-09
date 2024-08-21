@@ -28,8 +28,7 @@ body {
   background-size: cover;
   margin: 0 auto;
   cursor: pointer;
-  overflow: hidden;
-  background-image: url('../img/el_vectors-1x.png');
+  background-image: url('/img/covers/el_vectors-1x.png');
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -37,22 +36,23 @@ body {
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2) {
   .cover-section {
-    background-image: url('../img/el_vectors-2x.png');
+    background-image: url('/img/covers/el_vectors-2x.png');
   }
 }
 
 .cover-container {
-  width: 100%;
-  min-height: 508px;
+  max-width: 375px;
+  height: 508px;
   padding: 0;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
+  margin-top: 64px;
 }
 .covers-wrapp {
   position: absolute;
   right: -800px;
   left: 0;
-  overflow: hidden;
 }
 .cover-list {
   display: flex;
@@ -76,19 +76,16 @@ body {
 
 img.cover-img {
   width: 282px;
-  min-height: 162px;
+  height: 162px;
   display: block;
   object-fit: cover;
 }
 
 .cover-section.scrolling {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .cover-section.scrolling .cover-list li {
-  animation: marqueeLine 5s linear infinite;
-  animation-duration: 10s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation: marqueeLine 10s linear infinite;
 }
 
 @keyframes marqueeLine {
@@ -99,11 +96,16 @@ img.cover-img {
     transform: translateX(-150%);
   }
 }
+.cover-list-none {
+  display: none;
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
   .cover-container {
-    width: 768px;
-    height: auto;
+    margin-top: 96px;
+    max-width: 768px;
+    height: 960px;
+    overflow: hidden;
   }
 
   .cover-list {
@@ -117,15 +119,23 @@ img.cover-img {
 
   img.cover-img {
     width: 544px;
-    min-height: 314px;
+    height: 314px;
     object-fit: cover;
+    display: block;
   }
 }
-
+.cover-list-none {
+  display: none;
+}
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .cover-container {
-    width: 1429px;
-    min-height: 968px;
+    margin-top: 164px;
+    max-width: 1440px;
+    height: 960px;
+    overflow: hidden;
+  }
+  .cover-list-none {
+    display: flex;
   }
 }

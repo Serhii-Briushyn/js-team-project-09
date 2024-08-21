@@ -1,5 +1,5 @@
 .faq-container {
-  margin-bottom: 64px;
+  margin-top: 64px;
 }
 
 .faq-title {
@@ -108,7 +108,7 @@
 
 @media screen and (min-width: 768px) {
   .faq-container {
-    margin-bottom: 96px;
+    margin-top: 96px;
   }
 
   .faq-list {
@@ -158,6 +158,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .faq-container {
+    margin-top: 164px;
+  }
+
   .faq-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
