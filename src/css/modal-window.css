@@ -31,18 +31,18 @@
 }
 
 .mobile-menu-close-btn {
-  position: absolute;
-  top: 32px;
-  right: 21px;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  line-height: 0;
-  stroke: var(#fafafa);
+    position: absolute;
+    top: 32px;
+    right: 21px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+    stroke: #fafafa;
 }
 
 .mobile-menu-close-btn-icon {
-  fill: var(#fafafa);
+    fill: #fafafa;
 }
 
 .closed {
@@ -74,14 +74,13 @@
 }
 
 .mob-menu-list-link {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-skip-ink: none;
-
-  color: var(#fafafa);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
 }
 
 .mob-btn-wrapper {
@@ -91,19 +90,23 @@
 }
 
 .mob-button {
-  border-radius: 60px;
-  padding: 14px 31px;
-  width: 164px;
-  height: 45px;
-  background-color: var(#ed3b44);
+    border-radius: 60px;
+    padding: 14px 31px;
+    width: 164px;
+    height: 45px;
+    background-color: #ed3b44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
 }
 
 .mob-button a {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  color: var(#fafafa);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
 }
 
 @media screen and (min-width: 768px) {
