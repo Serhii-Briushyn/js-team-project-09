@@ -73,7 +73,7 @@ function showModal(title, message) {
         <div class="modal-content">
             <button class="modal-close">
                 <svg class="modal-close-svg">
-                     <use xlink:href="/js-team-project-09/img/sprite.svg#icon-closed-menu"></use>
+                     <use xlink:href="https://serhii-briushyn.github.io/js-team-project-09/img/sprite.svg#icon-closed-menu"></use>
                 </svg>
             </button>
             <h3 class="modal-footer-title">${title}</h3>
