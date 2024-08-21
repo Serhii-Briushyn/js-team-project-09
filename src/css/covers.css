@@ -20,22 +20,16 @@ body {
 }
 
 .cover-section {
-  backdrop-filter: blur(30px);
   background: #1c1d20;
   background-position: center;
   padding: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0 auto;
-  cursor: pointer;
-  background-image: url('/img/covers/el_vectors-1x.png') 1x;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 @media screen and (min-resolution: 2dppx),
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2) {
-  .cover-section {
+  .cover-container {
     background-image: url('/img/covers/el_vectors-2x.png') 2x;
   }
 }
@@ -47,6 +41,13 @@ body {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+  backdrop-filter: blur(30px);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/el_vectors-1x.png');
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .covers-wrapp {
   position: absolute;
