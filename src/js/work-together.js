@@ -1,13 +1,11 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import pathToSprite from '/img/sprite.svg';
 
 document.getElementById('email').addEventListener('input', function () {
   const emailInput = this;
   const validationMessage = document.getElementById('email-validation');
 
   if (emailInput.value === '') {
-    // Если поле пустое, убираем все классы и очищаем сообщение валидации
     emailInput.classList.remove('error', 'success');
     validationMessage.textContent = '';
   } else if (emailInput.checkValidity()) {
@@ -53,7 +51,7 @@ document.querySelector('.form-btn').addEventListener('click', function (event) {
       document.querySelector('.footer-form').reset();
       showModal(result.title, result.message);
     })
-    .catch(error => {
+    .catch(() => {
       showToast(
         'Error',
         'Something went wrong. Please check your input and try again.'
@@ -62,33 +60,24 @@ document.querySelector('.form-btn').addEventListener('click', function (event) {
 });
 
 function showModal(title, message) {
-  const modal = document.createElement('div');
-  modal.classList.add('modal');
+  const modal = document.getElementById('modal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalMessage = document.getElementById('modal-message');
 
-  modal.innerHTML = `
-        <div class="modal-content">
-            <button class="modal-close">
-                <svg class="modal-close-svg">
-                  <use href="${pathToSprite}#icon-closed-menu"></use>
-                </svg>
-            </button>
-            <h3 class="modal-footer-title">${title}</h3>
-            <p class="modal-footer-text">${message}</p>
-        </div>
-    `;
-
-  document.body.appendChild(modal);
+  modalTitle.textContent = title;
+  modalMessage.textContent = message;
+  modal.style.display = 'block';
   document.body.classList.add('modal-open');
 
   function closeModal() {
-    document.body.removeChild(modal);
+    modal.style.display = 'none';
     document.body.classList.remove('modal-open');
   }
 
-  modal.querySelector('.modal-close').addEventListener('click', closeModal);
+  document.getElementById('modal-close').addEventListener('click', closeModal);
 
   modal.addEventListener('click', function (event) {
-    if (event.currentTarget === modal) {
+    if (event.target === modal) {
       closeModal();
     }
   });
