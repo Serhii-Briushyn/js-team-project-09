@@ -1,3 +1,6 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 document
   .querySelector('.footer-comment')
   .addEventListener('input', function () {
@@ -69,15 +72,22 @@ function showModal(title, message) {
   modal.innerHTML = `
         <div class="modal-content">
             <button class="modal-close">
-                <svg class="modal-close-svg" width="11" height="11">
-                    <use href="/src/img/sprite.svg#icon-closed-menu"></use>
+                <svg class="modal-close-svg">
+                    <use href="/img/sprite.svg#icon-closed-menu"></use>
                 </svg>
             </button>
-            <h3>${title}</h3>
-            <p>${message}</p>
+            <h3 class="modal-footer-title">${title}</h3>
+            <p class="modal-footer-text">${message}</p>
         </div>
     `;
   document.body.appendChild(modal);
+
+  document.body.classList.add('modal-open');
+
+  function closeModal() {
+    document.body.removeChild(modal);
+    document.body.classList.remove('modal-open');
+  }
 
   modal.querySelector('.modal-close').addEventListener('click', closeModal);
 
@@ -92,22 +102,15 @@ function showModal(title, message) {
       closeModal();
     }
   });
-
-  function closeModal() {
-    document.body.removeChild(modal);
-  }
 }
 
 function showToast(title, message) {
-  const toast = document.createElement('div');
-  toast.classList.add('toast');
-  toast.innerHTML = `
-        <strong>${title}</strong>
-        <p>${message}</p>
-    `;
-  document.body.appendChild(toast);
-
-  setTimeout(() => {
-    document.body.removeChild(toast);
-  }, 3000);
+  iziToast.error({
+    title: 'Error',
+    message: 'Incorrect data entered!',
+    position: 'topRight',
+    timeout: 3000,
+    transitionIn: 'fadeIn',
+    transitionOut: 'fadeOut',
+  });
 }
