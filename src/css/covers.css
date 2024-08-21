@@ -46,7 +46,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url('../img/el_vectors-1x.png');
+  background-image: url('/img/covers/el_vectors-1x.png') 1x;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .covers-wrapp {
