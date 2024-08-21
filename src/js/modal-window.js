@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const burgerBtn = document.querySelector('.header-mobile-open-btn');
   const menu = document.querySelector('.mobile-menu');
 
-
   function toggleMenu() {
     menu.classList.toggle('is-open');
     document.body.classList.toggle('menu-open');
@@ -17,9 +16,3 @@ document.addEventListener('DOMContentLoaded', function () {
     burgerBtn.addEventListener('click', toggleMenu);
   }
 });
-
-links.forEach(link => {
-  link.addEventListener('click', (e) => {
-    menu.classList.remove('is-open');
-  })
-})
