@@ -123,6 +123,7 @@ textarea:-webkit-autofill:focus {
   border-color: transparent;
   color: #fafafa;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn:focus,
