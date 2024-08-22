@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 281px;
-  padding-bottom: 32px;
 }
 
 .hero {
@@ -12,6 +10,8 @@
   background-image: url('/img/img-hero/phone-hero.png');
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 281px;
+  padding-bottom: 32px;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px) {
@@ -80,7 +80,7 @@
     }
   }
 
-  .container-hero {
+  .hero {
     padding-top: 300px;
   }
 
@@ -99,13 +99,12 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .container-hero.container {
-    padding-top: 300px;
-    padding-left: 168px;
-  }
-
   .hero {
     background-image: url('/img/img-hero/desktop-hero.png');
+  }
+
+  .box-for-title {
+    margin-left: 146px;
   }
 
   .hero-main-title {
