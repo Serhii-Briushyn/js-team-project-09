@@ -10,9 +10,12 @@ textarea:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.footer {
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+
 .footer-container {
-  margin-top: 64px;
-  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   gap: 63px;
@@ -233,9 +236,12 @@ textarea:-webkit-autofill:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-container {
-    margin-top: 96px;
+  .footer {
+    padding-top: 96px;
     padding-bottom: 169px;
+  }
+
+  .footer-container {
     display: flex;
     gap: 18px;
     justify-content: center;
@@ -298,8 +304,12 @@ textarea:-webkit-autofill:focus {
 }
 
 @media screen and (min-width: 1440px) {
+  .footer {
+    padding-top: 164px;
+    padding-bottom: 32px;
+  }
+
   .footer-container.container {
-    margin-top: 164px;
     padding-left: 169px;
     background-position: left 1040px top 0;
   }

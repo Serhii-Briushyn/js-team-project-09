@@ -1,5 +1,5 @@
-.projects-container {
-  margin-top: 64px;
+.projects {
+  padding-top: 64px;
 }
 
 .projects-title {
@@ -146,8 +146,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .projects-container {
-    margin-top: 96px;
+  .projects {
+    padding-top: 96px;
   }
 
   .projects-content-react-wrap {
@@ -187,8 +187,8 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .projects-container {
-    margin-top: 164px;
+  .projects {
+    padding-top: 164px;
   }
 
   .projects-content-react.swiper-slide {

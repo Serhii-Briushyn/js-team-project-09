@@ -41,6 +41,8 @@
   color: #fafafa;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 8px;
 }
 
 .item-social-list {

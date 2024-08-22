@@ -1,7 +1,10 @@
+.reviews {
+  padding-top: 64px;
+}
+
 .reviews-container {
   display: flex;
   flex-direction: column;
-  margin-top: 64px;
 }
 
 .reviews-title {
@@ -77,10 +80,6 @@
   opacity: 0.8;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .review-buttons:hover,
-:focus {
-  opacity: 1;
-} */
 
 .custom-prev,
 .custom-next {
@@ -117,8 +116,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .reviews-container {
-    margin-top: 96px;
+  .reviews {
+    padding-top: 96px;
   }
 
   .review-buttons {
@@ -127,7 +126,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .reviews-container {
-    margin-top: 164px;
+  .reviews {
+    padding-top: 164px;
   }
 }

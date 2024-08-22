@@ -8,3 +8,13 @@ import './js/covers.js';
 import './js/reviews.js';
 import './js/work-together.js';
 import './js/modal-window.js';
+
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault();
+
+//     document.querySelector(this.getAttribute('href')).scrollIntoView({
+//       behavior: 'smooth',
+//     });
+//   });
+// });
