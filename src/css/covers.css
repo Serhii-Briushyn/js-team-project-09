@@ -41,6 +41,7 @@ body {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+  overflow-y: scroll;
   backdrop-filter: blur(30px);
   cursor: pointer;
   background-repeat: no-repeat;
@@ -99,6 +100,28 @@ img.cover-img {
 .cover-list-none {
   display: none;
 }
+
+.cover-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cover-list li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.cover-list.show {
+  opacity: 1; /* Ensure visibility */
+}
+
+.cover-list li.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .cover-container {
