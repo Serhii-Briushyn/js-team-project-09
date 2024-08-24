@@ -44,3 +44,24 @@ const debouncedCheckScroll = debounce(checkScroll, 100);
 window.addEventListener('scroll', debouncedCheckScroll);
 
 checkScroll();
+
+// *   Animation;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const coverLists = document.querySelectorAll('.cover-list li');
+
+  const listDelay = 500;
+
+  coverLists.forEach((list, listIndex) => {
+    list.style.transitionDelay = `${listIndex * listDelay}ms`;
+    list.classList.add('show');
+
+    const listItems = list.querySelectorAll('li');
+
+    listItems.forEach((item, itemIndex) => {
+      const itemDelay = 300;
+      item.style.transitionDelay = `${itemIndex * itemDelay}ms`;
+      item.classList.add('show');
+    });
+  });
+});
