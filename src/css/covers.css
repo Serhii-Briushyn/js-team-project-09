@@ -30,11 +30,13 @@ body {
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2) {
   .cover-container {
-    background-image: url('/img/covers/el_vectors-2x.png') 2x;
+    background-image: url('/img/covers/el_vectors-2x.png');
   }
 }
 
 .cover-container {
+  background-image: url('/img/covers/el_vectors-1x.png');
+  transition: background-color 0.3s ease, transform 0.3s ease;
   max-width: 375px;
   height: 508px;
   padding: 0;
@@ -47,8 +49,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url('/img/covers/el_vectors-1x.png') 1x;
+  background-image: url('/img/covers/el_vectors-1x.png');
   transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 64px;
+
 }
 .covers-wrapp {
   position: absolute;
@@ -125,6 +129,7 @@ img.cover-img {
 /* Tablet */
 @media screen and (min-width: 768px) {
   .cover-container {
+    margin-top: 96px;
     max-width: 768px;
     height: 960px;
     overflow: hidden;
@@ -152,6 +157,7 @@ img.cover-img {
 /* Desktop */
 @media screen and (min-width: 1440px) {
   .cover-container {
+    margin-top: 164px;
     max-width: 1440px;
     height: 960px;
     overflow: hidden;

@@ -10,6 +10,10 @@
 @import url('./work-together.css');
 @import url('./modal-window.css');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
   color: #fafafa;
@@ -18,6 +22,10 @@ body {
 
 ul {
   list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -31,6 +39,10 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul,
 ol {
   margin-top: 0;
@@ -38,14 +50,8 @@ ol {
   padding-left: 0;
 }
 
-img {
-  display: block;
-  min-width: 100%;
-  height: auto;
-}
-
 .container {
-  width: 375px;
+  max-width: 375px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -54,7 +60,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -62,6 +68,6 @@ img {
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1440px;
+    max-width: 1440px;
   }
 }
