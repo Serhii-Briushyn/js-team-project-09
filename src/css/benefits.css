@@ -1,5 +1,6 @@
 .section-benefits {
-  padding-top: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .h2-benefits {
@@ -114,7 +115,8 @@
 
 @media (min-width: 768px) {
   .section-benefits {
-    padding-top: 96px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .benefits-ul {
@@ -130,7 +132,8 @@
 
 @media (min-width: 1440px) {
   .section-benefits {
-    padding-top: 164px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 
   .container-benefits {

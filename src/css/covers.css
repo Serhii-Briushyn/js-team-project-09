@@ -22,8 +22,8 @@ body {
 .cover-section {
   background: #1c1d20;
   background-position: center;
-  padding: 0;
-  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 @media screen and (min-resolution: 2dppx),
@@ -37,11 +37,9 @@ body {
 .cover-container {
   background-image: url('/img/covers/el_vectors-1x.png');
   transition: background-color 0.3s ease, transform 0.3s ease;
-  max-width: 375px;
   height: 508px;
   padding: 0;
   position: relative;
-  margin: 0 auto;
   overflow: hidden;
   overflow-y: scroll;
   backdrop-filter: blur(30px);
@@ -51,9 +49,8 @@ body {
   background-position: center;
   background-image: url('/img/covers/el_vectors-1x.png');
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-top: 64px;
-
 }
+
 .covers-wrapp {
   position: absolute;
   right: -800px;
@@ -87,7 +84,7 @@ img.cover-img {
 }
 
 .cover-section.scrolling {
-  transform: scale(1.02);
+  transform: scale(1);
 }
 .cover-section.scrolling .cover-list li {
   animation: marqueeLine 10s linear infinite;
@@ -118,7 +115,7 @@ img.cover-img {
 }
 
 .cover-list.show {
-  opacity: 1; /* Ensure visibility */
+  opacity: 1;
 }
 
 .cover-list li.show {
@@ -128,9 +125,12 @@ img.cover-img {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .cover-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
   .cover-container {
-    margin-top: 96px;
-    max-width: 768px;
     height: 960px;
     overflow: hidden;
   }
@@ -156,9 +156,13 @@ img.cover-img {
 }
 /* Desktop */
 @media screen and (min-width: 1440px) {
+  .cover-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
   .cover-container {
     margin-top: 164px;
-    max-width: 1440px;
     height: 960px;
     overflow: hidden;
   }

@@ -1,5 +1,6 @@
 .faq-section {
-  padding-top: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .faq-title {
@@ -116,7 +117,8 @@
 
 @media screen and (min-width: 768px) {
   .faq-section {
-    padding-top: 96px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .faq-list {
@@ -171,7 +173,8 @@
 
 @media screen and (min-width: 1440px) {
   .faq-section {
-    padding-top: 164px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 
   .faq-list {
