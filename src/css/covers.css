@@ -41,7 +41,6 @@ body {
   padding: 0;
   position: relative;
   overflow: hidden;
-  overflow-y: scroll;
   backdrop-filter: blur(30px);
   cursor: pointer;
   background-repeat: no-repeat;
