@@ -56,13 +56,13 @@
   border-radius: 60px;
   width: 37px;
   height: 37px;
-  color: var(--white);
+  color: #fafafa;
   text-decoration: none;
-  transition: all 150ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .item-social-list:hover {
-  box-shadow: 0 0 10px 0 var(--red) inset, 0 0 10px 4px var(--red);
+  box-shadow: 0 0 10px 0 #ed3b44 inset, 0 0 10px 4px #ed3b44;
 }
 
 .address-link {

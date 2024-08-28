@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
         el: '.swiper-pagination',
         clickable: true,
       },
-      mousewheel: true,
       keyboard: {
         enabled: true,
         onlyInViewport: true,

@@ -31,7 +31,7 @@
   font-weight: 500;
   font-size: 20px;
   letter-spacing: -0.02em;
-  color: var(--white);
+  color: #fafafa;
 }
 
 .mobile-menu-button {
@@ -92,7 +92,7 @@
 .mobile-menu-icon,
 .mobile-menu-close-icon {
   fill: none;
-  stroke: var(--white);
+  stroke: #fafafa;
   cursor: pointer;
 }
 
@@ -128,7 +128,7 @@
   letter-spacing: -0.02em;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: var(--white);
+  color: #fafafa;
   border-radius: 2px;
   transition: all 350ms ease-in-out;
   display: block;
@@ -136,7 +136,7 @@
 
 .mobile-link:hover,
 .mobile-link:focus {
-  color: var(--red);
+  color: #ed3b44;
   transform: scale(1.5);
 }
 
@@ -150,15 +150,15 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
-  color: var(--white);
+  color: #fafafa;
   align-items: center;
-  background-color: var(--red);
+  background-color: #ed3b44;
   transition: all 250ms ease-in-out;
 }
 
 .mobile-order-button:hover,
 .mobile-order-button:focus {
-  box-shadow: 0 0 10px 0 var(--red) inset, 0 0 10px 4px var(--red);
+  box-shadow: 0 0 10px 0 #ed3b44 inset, 0 0 10px 4px #ed3b44;
   transform: scale(1.1);
 }
 
@@ -198,15 +198,15 @@
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
-    color: var(--white);
+    color: #fafafa;
     outline: 0;
     align-items: center;
-    background-color: var(--red);
-    transition: all 150ms ease-in-out;
+    background-color: #ed3b44;
+    transition: all 250ms ease-in-out;
   }
 
   .project-order-button:hover {
-    box-shadow: 0 0 10px 0 var(--red) inset, 0 0 10px 4px var(--red);
+    box-shadow: 0 0 10px 0 #ed3b44 inset, 0 0 10px 4px #ed3b44;
     transform: scale(1.1);
   }
 
@@ -219,7 +219,7 @@
     letter-spacing: -0.02em;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: var(--white);
+    color: #fafafa;
     background-color: transparent;
     border: none;
     margin-bottom: 8px;
@@ -229,7 +229,7 @@
 
   .menu-button:hover,
   .menu-button:focus {
-    color: var(--red);
+    color: #ed3b44;
     transform: scale(1.5);
   }
   .dropdown-menu {
@@ -249,14 +249,14 @@
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
-    color: var(--white);
+    color: #fafafa;
     transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
       transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dropdown-link:hover,
   .dropdown-link:focus {
-    color: var(--red);
+    color: #ed3b44;
   }
 
   .dropdown-nav {

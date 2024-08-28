@@ -8,13 +8,6 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
-/* @import url('./modal-window.css'); */
-
-:root {
-  --background: #1c1d20;
-  --red: #ed3b44;
-  --white: #fafafa;
-}
 
 html {
   scroll-behavior: smooth;
@@ -23,7 +16,7 @@ html {
 body {
   font-family: 'Inter Tight', sans-serif;
   color: #fafafa;
-  background-color: var(--background);
+  background-color: #1c1d20;
 }
 
 ul {

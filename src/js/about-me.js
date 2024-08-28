@@ -41,4 +41,17 @@ document.addEventListener('DOMContentLoaded', function () {
       1440: { slidesPerView: 6 },
     },
   });
+
+  const elements = document.querySelectorAll('.skills-item');
+  let activeElement = elements[0];
+
+  activeElement.classList.add('skills-item-active');
+
+  elements.forEach(element => {
+    element.addEventListener('mouseover', function () {
+      activeElement.classList.remove('skills-item-active');
+      element.classList.add('skills-item-active');
+      activeElement = element;
+    });
+  });
 });
