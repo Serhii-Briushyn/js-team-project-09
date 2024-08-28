@@ -139,7 +139,7 @@
 
 .projects-arrow.projects-arrow-disabled {
   opacity: 0.5;
-  cursor: auto;
+  pointer-events: none;
 }
 
 .swiper-container {

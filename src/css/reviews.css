@@ -79,7 +79,6 @@
   justify-content: center;
   gap: 12px;
   opacity: 0.8;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-prev,
@@ -107,13 +106,12 @@
   height: 68px;
   fill: none;
   stroke: #fafafa;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms ease-in-out;
 }
 
 .reviews-icon:hover {
-  stroke: #7d7c7c;
-  border-color: #7d7c7c;
+  background-color: #ed3b44;
+  border-color: #ed3b44;
 }
 
 @media screen and (min-width: 768px) {
