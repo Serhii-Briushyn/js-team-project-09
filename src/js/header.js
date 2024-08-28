@@ -8,13 +8,16 @@ const menuButton = document.querySelector('.menu-button');
 const mobileNav = document.querySelector('.mobile-nav');
 const projectOrderButton = document.querySelector('.project-order-button');
 const mobileOrderButton = document.querySelector('.mobile-order-button');
+const body = document.querySelector('body');
 
 function openMobileMenu() {
   mobileMenu.classList.add('is-open');
+  body.classList.add('no-scroll');
 }
 
 function closeMobileMenu() {
   mobileMenu.classList.remove('is-open');
+  body.classList.remove('no-scroll');
 }
 
 function toggleDropdownMenu() {
@@ -34,7 +37,7 @@ function closeDropdownMenuOnEscape(evt) {
 function handleScroll(evt) {
   evt.preventDefault();
   if (mobileMenu.classList.contains('is-open')) {
-    mobileMenu.classList.remove('is-open');
+    closeMobileMenu();
   }
   const target = evt.target.getAttribute('href').substring(1);
   const targetSection = document.getElementById(target);

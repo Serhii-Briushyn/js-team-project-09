@@ -80,7 +80,7 @@
 
 .icon-benefits {
   fill: none;
-  stroke: #fafafa;
+  stroke: var(--white);
 }
 
 .icon-container-benefits:hover {
