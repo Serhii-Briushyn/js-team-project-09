@@ -156,10 +156,9 @@
   transition: all 250ms ease-in-out;
 }
 
-.mobile-order-button:hover,
-.mobile-order-button:focus {
-  box-shadow: 0 0 10px 0 #ed3b44 inset, 0 0 10px 4px #ed3b44;
-  transform: scale(1.1);
+.mobile-order-button:hover {
+  transform: scale(1.2);
+  background-color: #cf2c34;
 }
 
 .project-order-button {
@@ -206,8 +205,8 @@
   }
 
   .project-order-button:hover {
-    box-shadow: 0 0 10px 0 #ed3b44 inset, 0 0 10px 4px #ed3b44;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    background-color: #cf2c34;
   }
 
   .menu-button {
