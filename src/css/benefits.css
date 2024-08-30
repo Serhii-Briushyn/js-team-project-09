@@ -30,13 +30,13 @@
   border-radius: 20px;
   padding: 24px;
   background-color: #242527;
-  transition: transform 0.3s ease, box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.benefits-li:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5),
-    inset 0 5px 10px rgba(255, 0, 0, 0.2), inset 0 3px 3px rgba(255, 0, 0, 0.2);
+  transition: transform 350ms ease, box-shadow 350ms ease;
+  &:active {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5),
+      inset 0 5px 10px rgba(255, 0, 0, 0.2),
+      inset 0 3px 3px rgba(255, 0, 0, 0.2);
+  }
 }
 
 .benefits-li-description {
@@ -95,13 +95,10 @@
   height: 55px;
   background-color: transparent;
   cursor: pointer;
-  transition: all 250ms ease-in-out;
-}
-
-.my-button-benefits:hover {
-  transform: scale(1.2);
-  background-color: #ed3b44;
-  border-color: #ed3b44;
+  transition: transform 150ms ease;
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 @media (min-width: 768px) {
@@ -134,7 +131,29 @@
     flex-direction: row;
   }
 
+  .benefits-li {
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.5),
+        inset 0 5px 10px rgba(255, 0, 0, 0.2),
+        inset 0 3px 3px rgba(255, 0, 0, 0.2);
+    }
+  }
+
   .benefits-content {
     width: 680px;
+  }
+
+  .my-button-benefits {
+    transition: all 350ms ease;
+    &:hover {
+      transform: scale(1.2);
+      background-color: #ed3b44;
+      border-color: #ed3b44;
+    }
+    &:active {
+      transition: transform 150ms ease;
+      transform: scale(1);
+    }
   }
 }

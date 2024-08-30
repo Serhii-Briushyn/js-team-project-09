@@ -49,13 +49,13 @@ document.querySelector('.form-btn').addEventListener('click', function (event) {
     })
     .then(result => {
       document.querySelector('.footer-form').reset();
-      resetValidation(); // Вызов функции для сброса состояния валидации
+      resetValidation();
       showModal(result.title, result.message);
     })
     .catch(() => {
       showToast(
         'Error',
-        'Something went wrong. Please check your input and try again.'
+        'Something went wrong.<br/> Please check your input and try again.'
       );
     });
 });

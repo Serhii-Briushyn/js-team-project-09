@@ -44,12 +44,10 @@
   border-radius: 5px;
   align-items: center;
   justify-content: center;
-}
-
-.mobile-menu-button:hover,
-.mobile-menu-button:focus {
-  transform: rotate(90deg);
-  transition: all 0.3s ease;
+  transition: transform 250ms ease;
+  &:active {
+    transform: rotate(90deg);
+  }
 }
 
 .mobile-menu {
@@ -107,11 +105,10 @@
   border: none;
   border-radius: 50%;
   background-color: transparent;
-}
-
-.mobile-menu-close-button:hover {
-  transform: rotate(90deg);
-  transition: all 0.3s ease;
+  transition: transform 150ms ease;
+  &:active {
+    transform: scale(0.8);
+  }
 }
 
 .mobile-list {
@@ -130,14 +127,11 @@
   text-decoration-skip-ink: none;
   color: #fafafa;
   border-radius: 2px;
-  transition: all 350ms ease-in-out;
   display: block;
-}
-
-.mobile-link:hover,
-.mobile-link:focus {
-  color: #ed3b44;
-  transform: scale(1.5);
+  transition: transform 150ms ease;
+  &:active {
+    transform: scale(0.8);
+  }
 }
 
 .mobile-order-button {
@@ -153,12 +147,10 @@
   color: #fafafa;
   align-items: center;
   background-color: #ed3b44;
-  transition: all 250ms ease-in-out;
-}
-
-.mobile-order-button:hover {
-  transform: scale(1.2);
-  background-color: #cf2c34;
+  transition: transform 150ms ease;
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 .project-order-button {
@@ -201,12 +193,10 @@
     outline: 0;
     align-items: center;
     background-color: #ed3b44;
-    transition: all 250ms ease-in-out;
-  }
-
-  .project-order-button:hover {
-    transform: scale(1.2);
-    background-color: #cf2c34;
+    transition: transform 150ms ease;
+    &:active {
+      transform: scale(0.9);
+    }
   }
 
   .menu-button {
@@ -222,15 +212,17 @@
     background-color: transparent;
     border: none;
     margin-bottom: 8px;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms ease, transform 250ms ease;
+    &:focus {
+      color: #ed3b44;
+      transform: scale(1.5);
+    }
+    &:active {
+      transition: transform 150ms ease;
+      transform: scale(1);
+    }
   }
 
-  .menu-button:hover,
-  .menu-button:focus {
-    color: #ed3b44;
-    transform: scale(1.5);
-  }
   .dropdown-menu {
     display: block;
     position: relative;
@@ -245,17 +237,16 @@
   }
 
   .dropdown-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .dropdown-link:hover,
-  .dropdown-link:focus {
-    color: #ed3b44;
+    transition: color 150ms ease, transform 150ms ease;
+    &:active {
+      color: #ed3b44;
+      transform: scale(0.9);
+    }
   }
 
   .dropdown-nav {
@@ -265,7 +256,7 @@
     height: 0px;
     z-index: 999;
     overflow: hidden;
-    transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: height 250ms ease;
   }
 
   .dropdown-show {
@@ -276,5 +267,68 @@
 @media (min-width: 1440px) {
   .mobile-menu {
     display: none;
+  }
+
+  .project-order-button {
+    display: flex;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    outline: 0;
+    align-items: center;
+    background-color: #ed3b44;
+    transition: transform 350ms ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      transition: transform 150ms ease;
+      transform: scale(1);
+    }
+  }
+
+  .menu-button {
+    display: block;
+    width: 67px;
+    height: 39px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 8px;
+    transition: color 250ms ease, transform 250ms ease;
+    &:focus {
+      color: #ed3b44;
+      transform: scale(1.5);
+    }
+    &:hover {
+      color: #ed3b44;
+      transform: scale(1.5);
+    }
+    &:active {
+      transition: transform 150ms ease;
+      transform: scale(1.2);
+    }
+  }
+
+  .dropdown-link {
+    transition: color 350ms ease, transform 350ms ease;
+    &:hover {
+      color: #ed3b44;
+    }
+    &:active {
+      transition: transform 150ms ease;
+      transform: scale(0.8);
+    }
   }
 }

@@ -106,12 +106,9 @@
   height: 68px;
   fill: none;
   stroke: #fafafa;
-  transition: all 250ms ease-in-out;
-}
-
-.reviews-icon:hover {
-  background-color: #ed3b44;
-  border-color: #ed3b44;
+  &:active {
+    transform: scale(0.8);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -129,5 +126,17 @@
   .reviews {
     padding-top: 82px;
     padding-bottom: 82px;
+  }
+
+  .reviews-icon {
+    transition: all 350ms ease;
+    &:hover {
+      background-color: #ed3b44;
+      border-color: #ed3b44;
+    }
+    &:active {
+      transition: transform 150ms ease;
+      transform: scale(0.8);
+    }
   }
 }
