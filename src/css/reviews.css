@@ -110,7 +110,7 @@
 }
 
 .reviews-icon:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 @media screen and (min-width: 768px) {

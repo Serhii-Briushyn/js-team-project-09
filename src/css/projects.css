@@ -124,7 +124,7 @@
 }
 
 .projects-arrow:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 .projects-arrow.projects-arrow-disabled:hover {

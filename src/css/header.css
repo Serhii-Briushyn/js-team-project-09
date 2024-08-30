@@ -44,14 +44,11 @@
   border-radius: 5px;
   align-items: center;
   justify-content: center;
-  transition: transform 250ms ease;
+  transition: transform 150ms ease;
 }
 
+.mobile-menu-button:hover,
 .mobile-menu-button:focus {
-  transform: rotate(90deg);
-}
-
-.mobile-menu-button:active {
   transform: rotate(90deg);
 }
 

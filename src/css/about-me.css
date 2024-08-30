@@ -95,6 +95,11 @@
   transform: scale(0.8);
 }
 
+.icon-arrow {
+  width: 18px;
+  height: 18px;
+}
+
 .details-item.active .details-btn .icon-arrow {
   transform: rotate(180deg);
 }
