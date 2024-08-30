@@ -88,12 +88,6 @@
   fill: none;
   stroke: #fafafa;
   cursor: pointer;
-  transition: all 250ms ease-in-out;
-}
-
-.details-btn:hover {
-  box-shadow: 0 0 10px 0 rgba(250, 250, 250, 0.4) inset,
-    0 0 10px 4px rgba(250, 250, 250, 0.4);
 }
 
 .icon-arrow {
@@ -176,13 +170,11 @@
   height: 130px;
   cursor: grab;
   border-radius: 100%;
-  border: 1px solid rgba(250, 250, 250, 0.2);
   transition: box-shadow 350ms ease-in-out;
-}
-
-.swiper-slide.skills-item:hover,
-.swiper-slide.skills-item:focus {
-  box-shadow: 0 0 100px 100px #ed3b44 inset;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  &:active {
+    box-shadow: 0 0 100px 100px #ed3b44 inset;
+  }
 }
 
 .skills-item-active {
@@ -289,6 +281,14 @@
     margin-bottom: 96px;
   }
 
+  .details-btn {
+    transition: all 250ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 10px 0 rgba(250, 250, 250, 0.4) inset,
+        0 0 10px 4px rgba(250, 250, 250, 0.4);
+    }
+  }
+
   .details-content {
     gap: 32px;
     padding-left: 696px;
@@ -312,5 +312,11 @@
 
   .skills {
     margin: 0 32px;
+  }
+
+  .swiper-slide.skills-item {
+    &:hover {
+      box-shadow: 0 0 100px 100px #ed3b44 inset;
+    }
   }
 }

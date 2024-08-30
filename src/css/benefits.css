@@ -100,8 +100,8 @@
 
 .my-button-benefits:hover {
   transform: scale(1.2);
-  background-color: #cf2c34;
-  border-color: #cf2c34;
+  background-color: #ed3b44;
+  border-color: #ed3b44;
 }
 
 @media (min-width: 768px) {

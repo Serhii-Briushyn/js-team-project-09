@@ -20,12 +20,12 @@ textarea:-webkit-autofill:focus {
   gap: 63px;
   background-color: #1c1d20;
   background-image: image-set(
-    url(/img/work-together/glass-effect-mob@2x-png.png) 2x,
-    url(/img/work-together/glass-effect-mob@1x-png.png) 1x
+    url(/img/work-together/background-footer-mob-min.png) 1x,
+    url(/img/work-together/background-footer-mob@2x-min.png) 2x
   );
-  background-position: left 290px top 0;
+  background-position: right 16px top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 71px 100%;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -56,20 +56,27 @@ textarea:-webkit-autofill:focus {
 
 .footer-input,
 .footer-comment {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
   color: #fafafa;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.6);
   background-color: transparent;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 250ms ease-in-out;
 }
 
 .footer-input {
-  padding-bottom: 20px;
-  margin-bottom: 16px;
+  padding: 0 0 20px 0;
 }
 
 .footer-comment {
-  padding-bottom: 20px;
+  padding: 16px 0 20px 0;
   margin-bottom: 32px;
   overflow: hidden;
   resize: none;
@@ -127,12 +134,12 @@ textarea:-webkit-autofill:focus {
   border-color: transparent;
   color: #fafafa;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms ease-in-out;
 }
 
-.form-btn:focus,
 .form-btn:hover {
-  background-color: #e0373f;
+  transform: scale(1.2);
+  background-color: #cf2c34;
 }
 
 .adress-list {
@@ -153,11 +160,12 @@ textarea:-webkit-autofill:focus {
   padding: 10px 12px;
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms ease-in-out;
 }
 
 .footer-adress-link:hover {
-  border-color: #fafafa;
+  background-color: #ed3b44;
+  border-color: #ed3b44;
 }
 
 .modal {
@@ -223,12 +231,11 @@ textarea:-webkit-autofill:focus {
   cursor: pointer;
   fill: none;
   stroke: #fafafa;
-  transition: transform 250ms linear, stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear;
 }
 
 .modal-close:hover {
   transform: rotate(90deg);
-  stroke: #ed3b44;
 }
 
 .modal-close-svg {
@@ -246,10 +253,11 @@ textarea:-webkit-autofill:focus {
     gap: 18px;
     justify-content: center;
     background-image: image-set(
-      url(/img/work-together/glass-effect-tab@2x-png.png) 2x,
-      url(/img/work-together/glass-effect-tab@1x-png.png) 1x
+      url(/img/work-together/background-footer-tab-min.png) 1x,
+      url(/img/work-together/background-footer-tab@2x-min.png) 2x
     );
-    background-position: left 570px top 0;
+    background-size: 198px 100%;
+    background-position: right top;
     padding-top: 80px;
     padding-bottom: 169px;
   }
@@ -316,7 +324,15 @@ textarea:-webkit-autofill:focus {
 
   .footer-container.container {
     padding-left: 169px;
-    background-position: left 1040px top 0;
+  }
+
+  .footer-container {
+    background-image: image-set(
+      url(/img/work-together/background-footer-desk-min.png) 1x,
+      url(/img/work-together/background-footer-desk@2x-min.png) 2x
+    );
+    background-size: 400px 100%;
+    background-position: right top;
   }
 
   .footer-form {

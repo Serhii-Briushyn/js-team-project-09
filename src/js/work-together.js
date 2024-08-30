@@ -49,6 +49,7 @@ document.querySelector('.form-btn').addEventListener('click', function (event) {
     })
     .then(result => {
       document.querySelector('.footer-form').reset();
+      resetValidation(); // Вызов функции для сброса состояния валидации
       showModal(result.title, result.message);
     })
     .catch(() => {
@@ -58,6 +59,15 @@ document.querySelector('.form-btn').addEventListener('click', function (event) {
       );
     });
 });
+
+function resetValidation() {
+  const emailInput = document.getElementById('email');
+  const validationMessage = document.getElementById('email-validation');
+
+  emailInput.classList.remove('error', 'success');
+  validationMessage.textContent = '';
+  validationMessage.classList.remove('error', 'success');
+}
 
 function showModal(title, message) {
   const modal = document.getElementById('modal');
