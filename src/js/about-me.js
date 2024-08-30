@@ -2,7 +2,6 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Обработка кликов на элементы details-list
   document
     .querySelector('.details-list')
     .addEventListener('click', function (event) {
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-  // Открытие контента первого активного элемента при загрузке страницы
   const firstItem = document.querySelector(
     '.details-item.active .details-content'
   );
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
     firstItem.style.maxHeight = firstItem.scrollHeight + 'px';
   }
 
-  // Инициализация Swiper
   const swiper = new Swiper('.skills-container.swiper', {
     loop: true,
     slidesPerView: 2,
@@ -46,13 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const elements = document.querySelectorAll('.skills-item');
-  let activeElement = elements[0]; // Изначально активен первый элемент
+  let activeElement = elements[0];
 
-  // Устанавливаем активный класс для первого элемента при загрузке
   activeElement.classList.add('skills-item-active');
 
   if (window.innerWidth >= 1440) {
-    // Код для ПК версии (ширина экрана 1024px и больше)
     elements.forEach(element => {
       element.addEventListener('mouseover', function () {
         activeElement.classList.remove('skills-item-active');
@@ -61,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   } else {
-    // Код для мобильной и планшетной версии (ширина экрана меньше 1024px)
     elements.forEach(element => {
       element.addEventListener('click', function () {
         if (activeElement) {

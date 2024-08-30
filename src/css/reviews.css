@@ -42,9 +42,10 @@
   opacity: 0.8;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .review-card:hover,
-:focus,
-:active {
+.review-card:focus,
+.review-card:active {
   opacity: 1;
 }
 
@@ -106,9 +107,10 @@
   height: 68px;
   fill: none;
   stroke: #fafafa;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.reviews-icon:active {
+  transform: scale(0.8);
 }
 
 @media screen and (min-width: 768px) {
@@ -130,13 +132,15 @@
 
   .reviews-icon {
     transition: all 350ms ease;
-    &:hover {
-      background-color: #ed3b44;
-      border-color: #ed3b44;
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(0.8);
-    }
+  }
+
+  .reviews-icon:hover {
+    background-color: #ed3b44;
+    border-color: #ed3b44;
+  }
+
+  .reviews-icon:active {
+    transition: transform 150ms ease;
+    transform: scale(0.8);
   }
 }

@@ -4,12 +4,9 @@ function isCenterInViewport(element) {
   const rect = element.getBoundingClientRect();
   const viewportHeight = window.innerHeight;
   const viewportWidth = window.innerWidth;
-
-  // Обчислюємо центр елемента
   const elementCenterX = rect.left + rect.width / 2;
   const elementCenterY = rect.top + rect.height / 2;
 
-  // Перевіряємо, чи центр елемента в межах вюпорта
   return (
     elementCenterX >= 0 &&
     elementCenterX <= viewportWidth &&

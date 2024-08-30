@@ -137,9 +137,10 @@ textarea:-webkit-autofill:focus {
   color: #fafafa;
   cursor: pointer;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.9);
-  }
+}
+
+.form-btn:active {
+  transform: scale(0.9);
 }
 
 .address-list {
@@ -161,9 +162,10 @@ textarea:-webkit-autofill:focus {
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.footer-address-link:active {
+  transform: scale(0.8);
 }
 
 .modal {
@@ -230,9 +232,10 @@ textarea:-webkit-autofill:focus {
   fill: none;
   stroke: #fafafa;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.modal-close:active {
+  transform: scale(0.8);
 }
 
 .modal-close-svg {
@@ -356,25 +359,29 @@ textarea:-webkit-autofill:focus {
 
   .form-btn {
     transition: transform 350ms ease;
-    &:hover {
-      transform: scale(1.2);
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(1);
-    }
+  }
+
+  .form-btn:hover {
+    transform: scale(1.2);
+  }
+
+  .form-btn:active {
+    transition: transform 150ms ease;
+    transform: scale(1);
   }
 
   .footer-address-link {
     transition: background-color 350ms ease, border-color 350ms ease,
       transform 150ms ease;
-    &:hover {
-      background-color: #ed3b44;
-      border-color: #ed3b44;
-    }
-    &:active {
-      transform: scale(0.8);
-    }
+  }
+
+  .footer-address-link:hover {
+    background-color: #ed3b44;
+    border-color: #ed3b44;
+  }
+
+  .footer-address-link:active {
+    transform: scale(0.8);
   }
 
   .modal-close {
@@ -387,11 +394,13 @@ textarea:-webkit-autofill:focus {
     fill: none;
     stroke: #fafafa;
     transition: transform 150ms ease;
-    &:hover {
-      transform: scale(1.4);
-    }
-    &:active {
-      transform: scale(1);
-    }
+  }
+
+  .modal-close:hover {
+    transform: scale(1.4);
+  }
+
+  .modal-close:active {
+    transform: scale(1);
   }
 }

@@ -45,9 +45,14 @@
   align-items: center;
   justify-content: center;
   transition: transform 250ms ease;
-  &:active {
-    transform: rotate(90deg);
-  }
+}
+
+.mobile-menu-button:focus {
+  transform: rotate(90deg);
+}
+
+.mobile-menu-button:active {
+  transform: rotate(90deg);
 }
 
 .mobile-menu {
@@ -106,9 +111,10 @@
   border-radius: 50%;
   background-color: transparent;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.mobile-menu-close-button:active {
+  transform: scale(0.8);
 }
 
 .mobile-list {
@@ -129,9 +135,10 @@
   border-radius: 2px;
   display: block;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.mobile-link:active {
+  transform: scale(0.8);
 }
 
 .mobile-order-button {
@@ -148,9 +155,10 @@
   align-items: center;
   background-color: #ed3b44;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.9);
-  }
+}
+
+.mobile-order-button:active {
+  transform: scale(0.9);
 }
 
 .project-order-button {
@@ -175,6 +183,7 @@
   .mobile-menu-button {
     display: none;
   }
+
   .mobile-menu {
     display: none;
   }
@@ -194,9 +203,10 @@
     align-items: center;
     background-color: #ed3b44;
     transition: transform 150ms ease;
-    &:active {
-      transform: scale(0.9);
-    }
+  }
+
+  .project-order-button:active {
+    transform: scale(0.9);
   }
 
   .menu-button {
@@ -213,14 +223,11 @@
     border: none;
     margin-bottom: 8px;
     transition: color 250ms ease, transform 250ms ease;
-    &:focus {
-      color: #ed3b44;
-      transform: scale(1.5);
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(1);
-    }
+  }
+
+  .menu-button:focus {
+    color: #ed3b44;
+    transform: scale(1.5);
   }
 
   .dropdown-menu {
@@ -243,10 +250,11 @@
     letter-spacing: -0.02em;
     color: #fafafa;
     transition: color 150ms ease, transform 150ms ease;
-    &:active {
-      color: #ed3b44;
-      transform: scale(0.9);
-    }
+  }
+
+  .dropdown-link:active {
+    color: #ed3b44;
+    transform: scale(0.9);
   }
 
   .dropdown-nav {
@@ -284,13 +292,15 @@
     align-items: center;
     background-color: #ed3b44;
     transition: transform 350ms ease;
-    &:hover {
-      transform: scale(1.2);
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(1);
-    }
+  }
+
+  .project-order-button:hover {
+    transform: scale(1.2);
+  }
+
+  .project-order-button:active {
+    transition: transform 150ms ease;
+    transform: scale(1);
   }
 
   .menu-button {
@@ -307,28 +317,33 @@
     border: none;
     margin-bottom: 8px;
     transition: color 250ms ease, transform 250ms ease;
-    &:focus {
-      color: #ed3b44;
-      transform: scale(1.5);
-    }
-    &:hover {
-      color: #ed3b44;
-      transform: scale(1.5);
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(1.2);
-    }
+  }
+
+  .menu-button:focus {
+    color: #ed3b44;
+    transform: scale(1.5);
+  }
+
+  .menu-button:hover {
+    color: #ed3b44;
+    transform: scale(1.5);
+  }
+
+  .menu-button:active {
+    transition: transform 150ms ease;
+    transform: scale(1.2);
   }
 
   .dropdown-link {
     transition: color 350ms ease, transform 350ms ease;
-    &:hover {
-      color: #ed3b44;
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(0.8);
-    }
+  }
+
+  .dropdown-link:hover {
+    color: #ed3b44;
+  }
+
+  .dropdown-link:active {
+    transition: transform 150ms ease;
+    transform: scale(0.8);
   }
 }

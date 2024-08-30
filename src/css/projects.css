@@ -65,9 +65,10 @@
   padding: 13px 18px;
   cursor: pointer;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.proj-content-text:active {
+  transform: scale(0.8);
 }
 
 .projects-button {
@@ -89,9 +90,10 @@
   gap: 10px;
   background-color: #ed3b44;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.projects-button:active {
+  transform: scale(0.8);
 }
 
 .projects-picture-space {
@@ -119,9 +121,10 @@
   cursor: pointer;
   stroke: #fafafa;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.projects-arrow:active {
+  transform: scale(0.8);
 }
 
 .projects-arrow.projects-arrow-disabled:hover {
@@ -206,38 +209,44 @@
 
   .proj-content-text {
     transition: all 350ms ease;
-    &:hover {
-      transform: scale(1.2);
-      background-color: #ed3b44;
-      border-color: #ed3b44;
-      color: #fafafa;
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(1);
-    }
+  }
+
+  .proj-content-text:hover {
+    transform: scale(1.2);
+    background-color: #ed3b44;
+    border-color: #ed3b44;
+    color: #fafafa;
+  }
+
+  .proj-content-text:active {
+    transition: transform 150ms ease;
+    transform: scale(1);
   }
 
   .projects-button {
     transition: transform 350ms ease;
-    &:hover {
-      transform: scale(1.2);
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(1);
-    }
+  }
+
+  .projects-button:hover {
+    transform: scale(1.2);
+  }
+
+  .projects-button:active {
+    transition: transform 150ms ease;
+    transform: scale(1);
   }
 
   .projects-arrow {
     transition: all 350ms ease;
-    &:hover {
-      background-color: #ed3b44;
-      border-color: #ed3b44;
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(0.8);
-    }
+  }
+
+  .projects-arrow:hover {
+    background-color: #ed3b44;
+    border-color: #ed3b44;
+  }
+
+  .projects-arrow:active {
+    transition: transform 150ms ease;
+    transform: scale(0.8);
   }
 }

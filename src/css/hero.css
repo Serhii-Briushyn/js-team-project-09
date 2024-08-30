@@ -59,9 +59,10 @@
   color: #fafafa;
   text-decoration: none;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.item-social-list:active {
+  transform: scale(0.8);
 }
 
 .address-link {
@@ -124,13 +125,15 @@
   .item-social-list {
     transition: background-color 350ms ease, border-color 350ms ease,
       transform 150ms ease;
-    &:hover {
-      background-color: #ed3b44;
-      border-color: #ed3b44;
-    }
-    &:active {
-      transform: scale(0.8);
-    }
+  }
+
+  .item-social-list:hover {
+    background-color: #ed3b44;
+    border-color: #ed3b44;
+  }
+
+  .item-social-list:active {
+    transform: scale(0.8);
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px) {

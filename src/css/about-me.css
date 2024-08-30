@@ -89,22 +89,18 @@
   stroke: #fafafa;
   cursor: pointer;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
 }
 
-.icon-arrow {
-  width: 18px;
-  height: 18px;
-}
-
-.details-btn .icon-arrow {
-  transition: transform 350ms ease;
+.details-btn:active {
+  transform: scale(0.8);
 }
 
 .details-item.active .details-btn .icon-arrow {
   transform: rotate(180deg);
+}
+
+.details-btn .icon-arrow {
+  transition: transform 350ms ease;
 }
 
 .details-item.active .details-content {
@@ -172,7 +168,6 @@
   align-items: center;
   width: 130px;
   height: 130px;
-  cursor: grab;
   border-radius: 100%;
   transition: box-shadow 350ms ease-in-out;
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -189,9 +184,10 @@
   width: 28px;
   height: 28px;
   transition: transform 150ms ease;
-  &:active {
-    transform: scale(0.8);
-  }
+}
+
+.skills-button-next:active {
+  transform: scale(0.7);
 }
 
 @media screen and (min-width: 768px) {
@@ -282,13 +278,15 @@
 
   .details-btn {
     transition: transform 150ms ease, box-shadow 250ms ease-in-out;
-    &:hover {
-      box-shadow: 0 0 10px 0 rgba(250, 250, 250, 0.4) inset,
-        0 0 10px 4px rgba(250, 250, 250, 0.4);
-    }
-    &:active {
-      transform: scale(0.8);
-    }
+  }
+
+  .details-btn:hover {
+    box-shadow: 0 0 10px 0 rgba(250, 250, 250, 0.4) inset,
+      0 0 10px 4px rgba(250, 250, 250, 0.4);
+  }
+
+  .details-btn:active {
+    transform: scale(0.8);
   }
 
   .details-content {
@@ -318,13 +316,15 @@
 
   .skills-button-next {
     transition: transform 350ms ease, stroke 250ms ease;
-    &:hover {
-      stroke: rgba(250, 250, 250, 0.4);
-      transform: scale(1.5);
-    }
-    &:active {
-      transition: transform 150ms ease;
-      transform: scale(1);
-    }
+  }
+
+  .skills-button-next:hover {
+    stroke: rgba(250, 250, 250, 0.4);
+    transform: scale(1.5);
+  }
+
+  .skills-button-next:active {
+    transition: transform 150ms ease;
+    transform: scale(1);
   }
 }
