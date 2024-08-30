@@ -227,6 +227,11 @@
     transform: scale(1.5);
   }
 
+  .menu-button:hover {
+    color: #ed3b44;
+    transform: scale(1.5);
+  }
+
   .dropdown-menu {
     display: block;
     position: relative;
@@ -314,16 +319,6 @@
     border: none;
     margin-bottom: 8px;
     transition: color 250ms ease, transform 250ms ease;
-  }
-
-  .menu-button:focus {
-    color: #ed3b44;
-    transform: scale(1.5);
-  }
-
-  .menu-button:hover {
-    color: #ed3b44;
-    transform: scale(1.5);
   }
 
   .menu-button:active {
