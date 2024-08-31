@@ -44,7 +44,7 @@
   border-radius: 5px;
   align-items: center;
   justify-content: center;
-  transition: transform 150ms ease;
+  transition: transform 250ms ease;
 }
 
 .mobile-menu-button:hover,
@@ -251,18 +251,17 @@
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
-    transition: color 150ms ease, transform 150ms ease;
+    transition: transform 150ms ease;
   }
 
   .dropdown-link:active {
-    color: #ed3b44;
     transform: scale(0.9);
   }
 
   .dropdown-nav {
     position: absolute;
     background-color: transparent;
-    width: 67px;
+    width: 100%;
     height: 0px;
     z-index: 999;
     overflow: hidden;

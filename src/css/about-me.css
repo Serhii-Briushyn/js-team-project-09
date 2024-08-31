@@ -88,11 +88,6 @@
   fill: none;
   stroke: #fafafa;
   cursor: pointer;
-  transition: transform 150ms ease;
-}
-
-.details-btn:active {
-  transform: scale(0.8);
 }
 
 .icon-arrow {
