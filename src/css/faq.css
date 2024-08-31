@@ -179,7 +179,7 @@
   }
 
   .faq-btn {
-    transition: transform 150ms ease, box-shadow 250ms ease-in-out;
+    transition: transform 250ms ease, box-shadow 250ms ease-in-out;
   }
 
   .faq-btn:hover {

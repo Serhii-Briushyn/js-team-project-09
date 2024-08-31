@@ -324,7 +324,7 @@
   }
 
   .skills-button-next:active {
-    transition: transform 150ms ease;
+    transition: transform 250ms ease;
     transform: scale(1);
   }
 }

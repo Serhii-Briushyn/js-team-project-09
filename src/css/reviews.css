@@ -107,6 +107,7 @@
   height: 52px;
   fill: none;
   stroke: #fafafa;
+  transition: transform 250ms ease;
 }
 
 .reviews-icon:active {
@@ -146,7 +147,7 @@
   }
 
   .reviews-icon:active {
-    transition: transform 150ms ease;
+    transition: transform 250ms ease;
     transform: scale(0.8);
   }
 }
